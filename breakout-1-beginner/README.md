@@ -6,11 +6,7 @@ Pick this session if you are new to neighborhood data, or want help finding the 
 
 ## Slides
 
-Deck 4 of the workshop, in three formats:
-
-- [Deck 4 PowerPoint](../slides/04_Choosing_Your_First_NaNDA_Dataset.pptx)
-- [Deck 4 web page](https://the-national-neighborhood-data-archive.github.io/GSA_Neighborhood-Data-in-Aging-Research_2026/slides/04_Choosing_Your_First_NaNDA_Dataset.html), a text transcript of the slides
-- [Deck 4 PDF](../slides/04_Choosing_Your_First_NaNDA_Dataset.pdf)
+[Read the breakout slides as a web page](https://the-national-neighborhood-data-archive.github.io/GSA_Neighborhood-Data-in-Aging-Research_2026/slides/04_Choosing_Your_First_NaNDA_Dataset.html). The PowerPoint and PDF copies, with speaker notes removed, are in the [slides folder](../slides/).
 
 ## Participant handout
 

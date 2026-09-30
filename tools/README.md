@@ -38,7 +38,7 @@ The public copies for the 2026 workshop were made from the originals in `C:\User
 - Each PDF has a page count equal to the public slide count, selectable text (the script prints the first line of text on page 4), and document structure tags (`/MarkInfo` with `/Marked true` and a `/StructTreeRoot`).
 - Each HTML transcript has one slide heading per public slide and no empty headings; `lang="en"`, a title, a skip link to `#main`, and a `<nav>`; every relative link resolves to a file in the repository; and every hyperlink found in the public `.pptx` appears in the HTML.
 
-For the 2026 workshop the expected public slide counts are 28, 16, 19, 34, and 9. Deck 3 has one fewer slide than the original because its hidden slide 13 was removed.
+For the 2026 workshop the expected public slide counts are 28, 16, 19, 34, and 9. The third deck (NaNDA and Immune Aging) has one fewer slide than the original because its hidden slide 13 was removed.
 
 ## Things to know
 

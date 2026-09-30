@@ -28,17 +28,17 @@ All presenters are at the University of Michigan, Institute for Social Research.
 
 ## Slides
 
-Each deck comes in three formats. The PowerPoint and PDF copies have speaker notes, comments, and hidden slides removed. The web page is a text transcript of the same slides (see [Accessibility](#accessibility) below).
+One web page per session. The session name is the link.
 
-| Deck | Title | Presenters | PowerPoint | Read as a web page | PDF |
-|---|---|---|---|---|---|
-| 1 | Welcome and overview | Lindsay Gypin and Philippa Clarke | [Deck 1 PowerPoint](slides/01_Welcome_and_Overview.pptx) | [Deck 1 web page](https://the-national-neighborhood-data-archive.github.io/GSA_Neighborhood-Data-in-Aging-Research_2026/slides/01_Welcome_and_Overview.html) | [Deck 1 PDF](slides/01_Welcome_and_Overview.pdf) |
-| 2 | Maintaining Health while Aging with Disability: The Role of the Neighborhood Environment | Philippa Clarke | [Deck 2 PowerPoint](slides/02_Neighborhood_Environment_and_Aging_with_Disability.pptx) | [Deck 2 web page](https://the-national-neighborhood-data-archive.github.io/GSA_Neighborhood-Data-in-Aging-Research_2026/slides/02_Neighborhood_Environment_and_Aging_with_Disability.html) | [Deck 2 PDF](slides/02_Neighborhood_Environment_and_Aging_with_Disability.pdf) |
-| 3 | Where We Live Gets Under the Skin: NaNDA and Immune Aging | Grace Noppert | [Deck 3 PowerPoint](slides/03_NaNDA_and_Immune_Aging.pptx) | [Deck 3 web page](https://the-national-neighborhood-data-archive.github.io/GSA_Neighborhood-Data-in-Aging-Research_2026/slides/03_NaNDA_and_Immune_Aging.html) | [Deck 3 PDF](slides/03_NaNDA_and_Immune_Aging.pdf) |
-| 4 | Choosing Your First NaNDA Dataset (Breakout 1) | Lindsay Gypin | [Deck 4 PowerPoint](slides/04_Choosing_Your_First_NaNDA_Dataset.pptx) | [Deck 4 web page](https://the-national-neighborhood-data-archive.github.io/GSA_Neighborhood-Data-in-Aging-Research_2026/slides/04_Choosing_Your_First_NaNDA_Dataset.html) | [Deck 4 PDF](slides/04_Choosing_Your_First_NaNDA_Dataset.pdf) |
-| 5 | Reconvene and wrap-up | Grace Noppert and Lindsay Gypin | [Deck 5 PowerPoint](slides/05_Reconvene_and_Wrap-Up.pptx) | [Deck 5 web page](https://the-national-neighborhood-data-archive.github.io/GSA_Neighborhood-Data-in-Aging-Research_2026/slides/05_Reconvene_and_Wrap-Up.html) | [Deck 5 PDF](slides/05_Reconvene_and_Wrap-Up.pdf) |
+| Session | Presenters |
+|---|---|
+| [Welcome and overview: what NaNDA is and a tour of the repository](https://the-national-neighborhood-data-archive.github.io/GSA_Neighborhood-Data-in-Aging-Research_2026/slides/01_Welcome_and_Overview.html) | Lindsay Gypin and Philippa Clarke |
+| [Maintaining Health while Aging with Disability: The Role of the Neighborhood Environment](https://the-national-neighborhood-data-archive.github.io/GSA_Neighborhood-Data-in-Aging-Research_2026/slides/02_Neighborhood_Environment_and_Aging_with_Disability.html) | Philippa Clarke |
+| [Where We Live Gets Under the Skin: NaNDA and Immune Aging](https://the-national-neighborhood-data-archive.github.io/GSA_Neighborhood-Data-in-Aging-Research_2026/slides/03_NaNDA_and_Immune_Aging.html) | Grace Noppert |
+| [Breakout 1 (beginner): Choosing Your First NaNDA Dataset](https://the-national-neighborhood-data-archive.github.io/GSA_Neighborhood-Data-in-Aging-Research_2026/slides/04_Choosing_Your_First_NaNDA_Dataset.html) | Lindsay Gypin |
+| [Reconvene and wrap-up: report back, resources, and next steps](https://the-national-neighborhood-data-archive.github.io/GSA_Neighborhood-Data-in-Aging-Research_2026/slides/05_Reconvene_and_Wrap-Up.html) | Grace Noppert and Lindsay Gypin |
 
-The web page links start working once GitHub Pages is switched on for this repository, which happens after the first release. Until then, use the PowerPoint or PDF copies.
+The web page is the text of the slides, built to read with a screen reader (see [Accessibility](#accessibility) below). For the slide visuals, open the PDF. PowerPoint and PDF copies of every deck, with speaker notes, comments, and hidden slides removed, are in the [slides folder](slides/), and each web page links to its own PowerPoint and PDF.
 
 ## Breakouts
 
@@ -46,11 +46,15 @@ Participants chose one of two 45-minute breakout sessions.
 
 ### Breakout 1 (beginner): Choosing Your First NaNDA Dataset
 
-Pick this if you are new to neighborhood data, or want help finding the right dataset. You'll leave with a NaNDA dataset matched to your geography and years. Facilitator: Lindsay Gypin. See the [Breakout 1 materials](breakout-1-beginner/README.md): the slides in all three formats and the participant handout.
+Pick this if you are new to neighborhood data, or want help finding the right dataset. You'll leave with a NaNDA dataset matched to your geography and years. Facilitator: Lindsay Gypin. See the [Breakout 1 materials](breakout-1-beginner/README.md): the slides and the participant handout.
 
 ### Breakout 2 (intermediate): Linking NaNDA with Your Data
 
-Pick this if your data have addresses, ZIP codes, or census tracts to merge with NaNDA. You'll leave with a merge you ran on practice data, plus code you can reuse. Presenters: Robert Melendez, Will Clary, and Grace Noppert. See the [Breakout 2 materials](breakout-2-intermediate/README.md): a walkthrough in R, Stata, and Python with practice data, published separately and linked from that page.
+Pick this if your data have addresses, ZIP codes, or census tracts to merge with NaNDA. You watch a merge run live, step by step, and leave with the code and practice data to run it yourself. Presenters: Robert Melendez, Will Clary, and Grace Noppert. The materials are published on their own site:
+
+- [Breakout 2 walkthrough site](https://the-national-neighborhood-data-archive.github.io/GSA_Intermediate_2026/)
+- [Breakout 2 repository on GitHub](https://github.com/The-National-Neighborhood-Data-Archive/GSA_Intermediate_2026)
+- DOI: added when the materials are archived in Zenodo
 
 ## Resources
 
@@ -72,7 +76,7 @@ Every NaNDA dataset has its own DOI. Include it in your citation. Cite each data
 
 ## Accessibility
 
-Each deck has an HTML transcript: one web page per deck, with a section for every slide, the slide title as a heading, the slide text and lists in reading order, tables as real tables, links preserved, and the description of each image written out as text. The transcripts were generated from the public copies of the decks with the script in the [tools](tools/README.md) folder, so they match the PowerPoint and PDF copies slide for slide. They contain no images, scripts, or external resources, and they were built to the WCAG 2.1 AA guidelines. The PDFs are tagged for document structure. If anything in this repository does not work with your assistive technology, email [nanda-admin@umich.edu](mailto:nanda-admin@umich.edu).
+Each session's slides have an HTML transcript: one web page per deck, with a section for every slide, the slide title as a heading, the slide text and lists in reading order, tables as real tables, links preserved, and the description of each image written out as text. The transcripts were generated from the public copies of the decks with the script in the [tools](tools/README.md) folder, so they match the PowerPoint and PDF copies slide for slide. They contain no images, scripts, or external resources, and they were built to the WCAG 2.1 AA guidelines. The PDFs are tagged for document structure. If anything in this repository does not work with your assistive technology, email [nanda-admin@umich.edu](mailto:nanda-admin@umich.edu).
 
 ## How to cite these materials
 
@@ -86,10 +90,4 @@ The scripts in the tools folder are released under the [MIT License](LICENSE). T
 
 ## Funding
 
-Funding & support
-
-National Institutes of Health
-
-- National Institute on Aging, R01AG109115
-- National Institute of Nursing Research, U01NR020556
-- National Institute on Minority Health and Health Disparities, U01NR020556
+National Institutes of Health: National Institute on Aging (R01AG109115); National Institute of Nursing Research and National Institute on Minority Health and Health Disparities (U01NR020556, one award funded by both institutes).
