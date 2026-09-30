@@ -1,0 +1,46 @@
+# Citation metadata for the workshop materials. GitHub reads this file for its
+# "Cite this repository" button, and Zenodo reads it when a release is archived.
+# The DOI is pending: the identifiers block is added once Zenodo mints it from
+# release v1.0.0.
+cff-version: 1.2.0
+message: "If you use these materials, please cite them as below."
+type: dataset
+title: "Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA). Workshop materials, GSA Annual Scientific Meeting Online Workshop Series 2026"
+authors:
+  - family-names: Clarke
+    given-names: Philippa
+    orcid: "https://orcid.org/0000-0002-4925-2968"
+    affiliation: "University of Michigan, Institute for Social Research"
+  - family-names: Noppert
+    given-names: Grace
+    orcid: "https://orcid.org/0000-0002-2040-960X"
+    affiliation: "University of Michigan, Institute for Social Research"
+  - family-names: Gypin
+    given-names: Lindsay
+    orcid: "https://orcid.org/0000-0001-7533-7669"
+    affiliation: "University of Michigan, Institute for Social Research"
+  - family-names: Melendez
+    given-names: Robert
+    affiliation: "University of Michigan, Institute for Social Research"
+  - family-names: Clary
+    given-names: William
+    orcid: "https://orcid.org/0009-0001-3583-5337"
+    affiliation: "University of Michigan, Institute for Social Research"
+version: 1.0.0
+date-released: 2026-09-30
+license:
+  - CC-BY-4.0
+  - MIT
+repository-code: "https://github.com/The-National-Neighborhood-Data-Archive/GSA_Neighborhood-Data-in-Aging-Research_2026"
+url: "https://github.com/The-National-Neighborhood-Data-Archive/GSA_Neighborhood-Data-in-Aging-Research_2026"
+keywords:
+  - NaNDA
+  - neighborhood data
+  - aging research
+  - gerontology
+  - census tracts
+  - ZCTA
+  - open data
+  - ICPSR
+  - workshop
+abstract: "Slides, accessible HTML transcripts, PDFs, handouts, and supporting tools from the two-hour virtual workshop Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA), presented on October 7, 2026 as part of the GSA Annual Scientific Meeting Online Workshop Series 2026. The workshop introduced NaNDA, showed two examples of neighborhood data in aging research, and ran two hands-on breakouts: choosing a first NaNDA dataset, and linking NaNDA with your own data."

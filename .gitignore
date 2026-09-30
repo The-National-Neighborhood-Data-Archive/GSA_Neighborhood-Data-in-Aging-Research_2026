@@ -1,0 +1,9 @@
+# PowerPoint lock files
+~$*
+# Scratch folder used by tools/make_public_decks.ps1
+_work/
+# Python
+__pycache__/
+# OS files
+Thumbs.db
+.DS_Store
