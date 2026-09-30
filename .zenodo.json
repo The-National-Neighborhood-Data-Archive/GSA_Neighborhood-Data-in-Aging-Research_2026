@@ -1,0 +1,46 @@
+{
+  "upload_type": "lesson",
+  "title": "Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA). Workshop materials, GSA Annual Scientific Meeting Online Workshop Series 2026",
+  "creators": [
+    {
+      "name": "Clarke, Philippa",
+      "affiliation": "University of Michigan, Institute for Social Research",
+      "orcid": "0000-0002-4925-2968"
+    },
+    {
+      "name": "Noppert, Grace",
+      "affiliation": "University of Michigan, Institute for Social Research",
+      "orcid": "0000-0002-2040-960X"
+    },
+    {
+      "name": "Gypin, Lindsay",
+      "affiliation": "University of Michigan, Institute for Social Research",
+      "orcid": "0000-0001-7533-7669"
+    },
+    {
+      "name": "Melendez, Robert",
+      "affiliation": "University of Michigan, Institute for Social Research"
+    },
+    {
+      "name": "Clary, William",
+      "affiliation": "University of Michigan, Institute for Social Research",
+      "orcid": "0009-0001-3583-5337"
+    }
+  ],
+  "description": "<p>Materials from <em>Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA)</em>, a two-hour virtual workshop presented on October 7, 2026 as part of the GSA Annual Scientific Meeting Online Workshop Series 2026. The workshop introduced NaNDA and its repository on ICPSR, showed two examples of neighborhood data in aging research, and ran two hands-on breakouts: a beginner session on choosing a first NaNDA dataset and an intermediate session on linking NaNDA with your own data.</p><p>This package holds the five slide decks in three formats (PowerPoint, accessible HTML transcript, and PDF), the beginner breakout's participant handout, a section that points to the intermediate breakout's separately published materials, the resources participants were pointed to, and the scripts used to produce the public copies.</p>",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "NaNDA",
+    "neighborhood data",
+    "aging research",
+    "gerontology",
+    "census tracts",
+    "ZCTA",
+    "open data",
+    "ICPSR",
+    "workshop"
+  ],
+  "version": "1.0.0",
+  "language": "eng"
+}

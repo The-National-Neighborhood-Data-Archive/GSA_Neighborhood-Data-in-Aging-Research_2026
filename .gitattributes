@@ -1,0 +1,6 @@
+# Normalize line endings for text files; keep Office and image files binary.
+* text=auto
+*.pptx binary
+*.pdf binary
+*.docx binary
+*.png binary
