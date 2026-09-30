@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choosing Your First NaNDA Dataset: slide transcript</title>
+<style>
+:root { color-scheme: light; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #ffffff;
+}
+.page { max-width: 72ch; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
+a { color: #0b5394; text-decoration: underline; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus { outline: 3px solid #0b5394; outline-offset: 3px; }
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: 0;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  color: #0b5394;
+  border: 3px solid #0b5394;
+  font-weight: 600;
+}
+.skip-link:focus { left: 1rem; top: 1rem; z-index: 1; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.75rem; }
+h2 { font-size: 1.5rem; line-height: 1.25; margin: 2.5rem 0 0.75rem; }
+main h2 { padding-top: 1rem; border-top: 1px solid #cccccc; }
+h3 { font-size: 1.2rem; line-height: 1.3; margin: 1.5rem 0 0.5rem; }
+p, ul, ol { margin: 0 0 0.75rem; }
+ul, ol { padding-left: 1.5rem; }
+li { margin-bottom: 0.25rem; }
+li > ul, li > ol { margin-top: 0.25rem; }
+.about { color: #333333; }
+.image { font-style: italic; }
+nav ol { columns: 1; }
+table { border-collapse: collapse; width: 100%; margin: 0 0 1rem; }
+th, td { border: 1px solid #767676; padding: 0.4rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: #e8eef5; color: #1a1a1a; }
+@media (min-width: 40em) { nav ol { columns: 2; column-gap: 2rem; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to slide content</a>
+<div class="page">
+<header>
+<h1>Choosing Your First NaNDA Dataset</h1>
+<p class="about">Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA). GSA Annual Scientific Meeting Online Workshop Series 2026. Presented by Lindsay Gypin, Wednesday, October 7, 2026.</p>
+<p>This page is a text transcript of the slides, one section per slide, with image descriptions written out where the slides carry images. You can also <a href="04_Choosing_Your_First_NaNDA_Dataset.pptx">download this deck as a PowerPoint file</a>, <a href="04_Choosing_Your_First_NaNDA_Dataset.pdf">download this deck as a PDF</a>, or <a href="https://github.com/The-National-Neighborhood-Data-Archive/GSA_Neighborhood-Data-in-Aging-Research_2026">return to the workshop materials repository on GitHub</a>.</p>
+</header>
+<nav aria-label="Slides">
+<h2 id="contents">Slides in this deck</h2>
+<ol>
+<li><a href="#slide-1">Slide 1: Choosing Your First NaNDA Dataset</a></li>
+<li><a href="#slide-2">Slide 2: Three questions, one dataset</a></li>
+<li><a href="#slide-3">Slide 3: Meet Jordan Ellis</a></li>
+<li><a href="#slide-4">Slide 4: Where?</a></li>
+<li><a href="#slide-5">Slide 5: Census tracts and ZCTAs</a></li>
+<li><a href="#slide-6">Slide 6: The Census geography hierarchy</a></li>
+<li><a href="#slide-7">Slide 7: Tracts and ZCTAs</a></li>
+<li><a href="#slide-8">Slide 8: How a FIPS code grows</a></li>
+<li><a href="#slide-9">Slide 9: ZCTA codes are a separate system</a></li>
+<li><a href="#slide-10">Slide 10: Geographic boundaries</a></li>
+<li><a href="#slide-11">Slide 11: Which geographic boundaries fit Jordan's research?</a></li>
+<li><a href="#slide-12">Slide 12: The answer is A: Census Tract 2010</a></li>
+<li><a href="#slide-13">Slide 13: Jordan's boundaries: 2010</a></li>
+<li><a href="#slide-14">Slide 14: NaNDA location variables</a></li>
+<li><a href="#slide-15">Slide 15: Search NaNDA for 2010 census tract datasets</a></li>
+<li><a href="#slide-16">Slide 16: Where, so far</a></li>
+<li><a href="#slide-17">Slide 17: When?</a></li>
+<li><a href="#slide-18">Slide 18: Two kinds of timing</a></li>
+<li><a href="#slide-19">Slide 19: Yearly dataset</a></li>
+<li><a href="#slide-20">Slide 20: Which years does Jordan use?</a></li>
+<li><a href="#slide-21">Slide 21: The answer is B: every interview year</a></li>
+<li><a href="#slide-22">Slide 22: One year, or every year?</a></li>
+<li><a href="#slide-23">Slide 23: Period dataset</a></li>
+<li><a href="#slide-24">Slide 24: Socioeconomic Status: the files</a></li>
+<li><a href="#slide-25">Slide 25: Which 5-year window fits Jordan's research?</a></li>
+<li><a href="#slide-26">Slide 26: The answer is A: 2013 to 2017</a></li>
+<li><a href="#slide-27">Slide 27: What if Jordan's interviews ran 2011 to 2014?</a></li>
+<li><a href="#slide-28">Slide 28: Period dataset: neighborhood poverty</a></li>
+<li><a href="#slide-29">Slide 29: Where and When, so far</a></li>
+<li><a href="#slide-30">Slide 30: What?</a></li>
+<li><a href="#slide-31">Slide 31: Scavenger hunt</a></li>
+<li><a href="#slide-32">Slide 32: Your turn</a></li>
+<li><a href="#slide-33">Slide 33: How the next 8 minutes run</a></li>
+<li><a href="#slide-34">Slide 34: Keep your handout</a></li>
+</ol>
+</nav>
+<main id="main">
+<section id="slide-1" aria-labelledby="slide-1-heading">
+<h2 id="slide-1-heading">Slide 1: Choosing Your First NaNDA Dataset</h2>
+<p class="image">Image: NaNDA logo</p>
+<p>Breakout 1 · Beginner session · 45 minutes</p>
+<p>GSA Annual Scientific Meeting Online Workshop Series 2026 · October 7, 2026</p>
+</section>
+<section id="slide-2" aria-labelledby="slide-2-heading">
+<h2 id="slide-2-heading">Slide 2: Three questions, one dataset</h2>
+<p>Where?</p>
+<p>When?</p>
+<p>What?</p>
+<p>Your turn</p>
+<p>Geography</p>
+<p>Years</p>
+<p>Topics and variables</p>
+<p>Your own project</p>
+<p>HOW IT WORKS</p>
+<ul>
+<li><a href="https://www.icpsr.umich.edu/sites/icpsr/categories/shared/login">ICPSR Account </a>
+</li>
+<li><a href="https://docs.google.com/document/d/18-SXCsL8Pb1TedawAU952PfPBodfV5GuyOn4ZmPG3h8/copy">Choosing Your First NaNDA Dataset: Participant Handout (GSA 2026)</a>
+</li>
+<li>Polls, a scavenger hunt, and lots of chat.
+</li>
+<li>Bring your own project, or borrow Jordan's.
+</li></ul>
+</section>
+<section id="slide-3" aria-labelledby="slide-3-heading">
+<h2 id="slide-3-heading">Slide 3: Meet Jordan Ellis</h2>
+<p class="image">Image: Portrait of Dr. Jordan Ellis, a fictional researcher, drawn as the NaNDA globe mascot wearing glasses and a mustache</p>
+<p>Topic</p>
+<p>Loneliness among adults 65 and older</p>
+<p>Data</p>
+<p>100 participants<br>Yearly interviews 2016 to 2019</p>
+<p>Geography</p>
+<p>Home addresses collected at enrollment in 2016<br>Geocoded to census tracts</p>
+<p>RESEARCH QUESTION</p>
+<p>Do older adults living near more places to gather (clubs, community groups, places of worship) report less loneliness?</p>
+<p>Dr. Jordan Ellis</p>
+<p>they|them</p>
+</section>
+<section id="slide-4" aria-labelledby="slide-4-heading">
+<h2 id="slide-4-heading">Slide 4: Where?</h2>
+<p>SEGMENT 1</p>
+<p>Census tracts, ZCTAs, and geographic boundaries, oh my!</p>
+</section>
+<section id="slide-5" aria-labelledby="slide-5-heading">
+<h2 id="slide-5-heading">Slide 5: Census tracts and ZCTAs</h2>
+<p>Census tract</p>
+<p>ZCTA (ZIP Code Tabulation Area)</p>
+<p>A small, stable statistical area, usually 1,200 to 8,000 people.</p>
+<p>The Census Bureau's area version of a ZIP code, built from census blocks.</p>
+<p>Nests inside a county, the way counties nest inside a state.</p>
+<p>Not the boundary the Postal Service uses, and not nested inside anything.</p>
+<p>Most NaNDA measures are available at this level.</p>
+<p>ZIP ≠ ZCTA</p>
+<p>A ZIP code is a mail delivery route. A ZCTA is a statistical area. They are not interchangeable. ZIP codes need a crosswalk to ZCTAs (Intermediate Session).</p>
+</section>
+<section id="slide-6" aria-labelledby="slide-6-heading">
+<h2 id="slide-6-heading">Slide 6: The Census geography hierarchy</h2>
+<p>Nation</p>
+<p>States</p>
+<p>The center spine nests. Nation, states, counties, tracts, block groups, blocks. Each level fits inside the one above it.</p>
+<p>ZCTAs</p>
+<p>Counties</p>
+<p>Built from census blocks</p>
+<p>Census tracts</p>
+<p>ZCTAs sit off to the side. They skip tracts and counties entirely, which is why their lines never match tract or county lines.</p>
+<p>Block groups</p>
+<p>Simplified from the U.S. Census Bureau hierarchy diagram</p>
+<p>Census blocks</p>
+</section>
+<section id="slide-7" aria-labelledby="slide-7-heading">
+<h2 id="slide-7-heading">Slide 7: Tracts and ZCTAs</h2>
+<p class="image">Image: Two illustrations side by side. Left: census tracts fit neatly inside counties, and counties fit inside the state. Right: the same map with ZCTA boundaries drawn as dashed lines that cut across tract, county, and state lines. Illustration, not a real map.</p>
+</section>
+<section id="slide-8" aria-labelledby="slide-8-heading">
+<h2 id="slide-8-heading">Slide 8: How a FIPS code grows</h2>
+<p>State</p>
+<p>2 digits</p>
+<p>2</p>
+<p>6</p>
+<p>Michigan</p>
+<p>County</p>
+<p>5 digits</p>
+<p>2</p>
+<p>6</p>
+<p>1</p>
+<p>6</p>
+<p>1</p>
+<p>State, then county 161 (Washtenaw)</p>
+<p>Census tract</p>
+<p>11 digits</p>
+<p>2</p>
+<p>6</p>
+<p>1</p>
+<p>6</p>
+<p>1</p>
+<p>4</p>
+<p>0</p>
+<p>0</p>
+<p>1</p>
+<p>0</p>
+<p>0</p>
+<p>County, then tract 400100</p>
+<p>Block group</p>
+<p>12 digits</p>
+<p>2</p>
+<p>6</p>
+<p>1</p>
+<p>6</p>
+<p>1</p>
+<p>4</p>
+<p>0</p>
+<p>0</p>
+<p>1</p>
+<p>0</p>
+<p>0</p>
+<p>1</p>
+<p>Tract, then block group 1</p>
+<p>NaNDA's tract identifiers, tract_fips10 and tract_fips20, are this 11-digit code. Stored as text to preserve leading zeros. <a href="https://www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html">Census Bureau: Understanding Geographic Identifiers</a></p>
+</section>
+<section id="slide-9" aria-labelledby="slide-9-heading">
+<h2 id="slide-9-heading">Slide 9: ZCTA codes are a separate system</h2>
+<p>Census tract FIPS code</p>
+<p>ZCTA code</p>
+<p>11 digits · state + county + tract</p>
+<p>5 digits · no state or county inside it</p>
+<p>2</p>
+<p>6</p>
+<p>1</p>
+<p>6</p>
+<p>1</p>
+<p>4</p>
+<p>0</p>
+<p>0</p>
+<p>1</p>
+<p>0</p>
+<p>0</p>
+<p>4</p>
+<p>8</p>
+<p>1</p>
+<p>0</p>
+<p>4</p>
+<p>State</p>
+<p>County</p>
+<p>Tract</p>
+<p>ZCTA</p>
+<p>Nested. Every digit tells you where the tract sits.</p>
+<p>Not nested. It looks like a ZIP code, and usually matches one, but it is a Census area, not a mail route.</p>
+<p>Have ZIP codes? They still need a crosswalk to ZCTAs before linking to NaNDA.</p>
+</section>
+<section id="slide-10" aria-labelledby="slide-10-heading">
+<h2 id="slide-10-heading">Slide 10: Geographic boundaries</h2>
+<p>Tracts and ZCTAs are redrawn after each Decennial Census. 2010 and 2020 codes do not align. </p>
+<p>Match the boundary to when your geography was assigned, not to the survey year.</p>
+<p>2010 Census tract boundaries</p>
+<p>2020 Census tract boundaries</p>
+<p>2010 boundaries</p>
+<p>2020 boundaries</p>
+<p>2008</p>
+<p>2012</p>
+<p>2016</p>
+<p>2020</p>
+<p>2024</p>
+<p>Your turn</p>
+<p>Jordan's addresses were geocoded in 2016</p>
+<p>Which geographic boundaries do Jordan's tract codes use? </p>
+</section>
+<section id="slide-11" aria-labelledby="slide-11-heading">
+<h2 id="slide-11-heading">Slide 11: Which geographic boundaries fit Jordan's research?</h2>
+<p>POLL 1 OF 3 · BOUNDARIES</p>
+<p>Civic, Social, and Religious Organizations comes in four files. Jordan's data: census tracts on 2010 boundaries.</p>
+<p>A.</p>
+<p>Census Tract 2010</p>
+<p>B.</p>
+<p>Census Tract 2020</p>
+<p>C.</p>
+<p>ZCTA 2010</p>
+<p>D.</p>
+<p>ZCTA 2020</p>
+<p>E.</p>
+<p>Not sure</p>
+<p>Join the poll</p>
+<p>Watch for it to pop up in your Zoom window.</p>
+</section>
+<section id="slide-12" aria-labelledby="slide-12-heading">
+<h2 id="slide-12-heading">Slide 12: The answer is A: Census Tract 2010</h2>
+<p>UNIT</p>
+<p>BOUNDARIES</p>
+<p>A</p>
+<p>Census Tract 2010. Tracts, on the same geographic boundaries as Jordan's codes.</p>
+<p>Match</p>
+<p>Match</p>
+<p>B</p>
+<p>Census Tract 2020. Right unit, but the codes are different. It won't link to Jordan's 2010 tract codes.</p>
+<p>Match</p>
+<p>Wrong boundaries</p>
+<p>C</p>
+<p>ZCTA 2010. Right boundaries, wrong unit. Jordan has tract codes, not ZCTAs.</p>
+<p>Wrong unit</p>
+<p>Match</p>
+<p>D</p>
+<p>ZCTA 2020. Neither.</p>
+<p>Wrong unit</p>
+<p>Wrong boundaries</p>
+<p>Boundaries first.</p>
+<p>The filename tells you the unit and the geographic boundaries. Only the Census Tract 2010 file links on tract_fips10. Years come next.</p>
+</section>
+<section id="slide-13" aria-labelledby="slide-13-heading">
+<h2 id="slide-13-heading">Slide 13: Jordan's boundaries: 2010</h2>
+<p>Geocoded in 2016, five years before the 2020 boundaries existed. Anything geocoded before 2020 almost certainly uses 2010 boundaries.</p>
+<p>2010 Census tract boundaries</p>
+<p>2020 Census tract boundaries</p>
+<p>2010 boundaries</p>
+<p>2020 boundaries</p>
+<p>2008</p>
+<p>2012</p>
+<p>2016</p>
+<p>2020</p>
+<p>2024</p>
+<p>2016 · Jordan's addresses geocoded</p>
+<p>Jordan’s</p>
+<p>Where</p>
+<p>2010 boundaries. Use the Census Tract 2010 file, linked on tract_fips10. Not sure when your data were geocoded? Ask whoever did it, or check the codebook.</p>
+</section>
+<section id="slide-14" aria-labelledby="slide-14-heading">
+<h2 id="slide-14-heading">Slide 14: NaNDA location variables</h2>
+<p>VARIABLE</p>
+<p>WHAT IT IS</p>
+<p>tract_fips10</p>
+<p>Census tract, 2010 boundaries (11 digits)</p>
+<p>tract_fips20</p>
+<p>Census tract, 2020 boundaries (11 digits)</p>
+<p>└ tract_fips22</p>
+<p>The same 2020 tracts, recoded for Connecticut's 2022 boundary change. An additional variable in the 2020 files, not a separate dataset. Use it if your data were geocoded after 2022 and include Connecticut.</p>
+<p>zcta10</p>
+<p>ZCTA, 2010 boundaries (5 digits)</p>
+<p>zcta20</p>
+<p>ZCTA, 2020 boundaries (5 digits)</p>
+<p>The suffix tells you the geographic boundaries. Recent NaNDA datasets use these variable names; older ones may differ, so check the documentation.</p>
+</section>
+<section id="slide-15" aria-labelledby="slide-15-heading">
+<h2 id="slide-15-heading">Slide 15: Search NaNDA for 2010 census tract datasets</h2>
+<p>TRY IT</p>
+<p>1</p>
+<p>Open the <a href="https://www.icpsr.umich.edu/sites/nanda/about">NaNDA repository</a> on ICPSR. icpsr.umich.edu/sites/nanda</p>
+<ul>
+<li>Find Data
+</li>
+<li>Studies
+</li></ul>
+<p>WHAT YOU WILL SEE</p>
+<p>Most NaNDA studies come as the same four files.</p>
+<p>2</p>
+<p>Search "census tract 2010"</p>
+<p>Census Tract 2010</p>
+<p>Census Tract 2020</p>
+<ul>
+<li>topic for Jordan's research: "religious", "civic", or "social"
+</li></ul>
+<p>ZCTA 2010</p>
+<p>ZCTA 2020</p>
+<p>3</p>
+<p>Open any study.</p>
+<p>Jordan's data fit the first one. Yours may fit a different one.</p>
+<ul>
+<li>Select "Data &amp; documentation"
+</li>
+<li>Find the Census Tract 2010 file
+</li></ul>
+<p>4</p>
+<p>Post the study title in the chat.</p>
+</section>
+<section id="slide-16" aria-labelledby="slide-16-heading">
+<h2 id="slide-16-heading">Slide 16: Where, so far</h2>
+<p>Where?</p>
+<p>JORDAN'S WHERE</p>
+<ul>
+<li>Tracts nest in counties. ZCTAs nest in nothing.
+</li>
+<li>ZIP ≠ ZCTA. ZIP codes need a crosswalk first.
+</li>
+<li>Boundaries follow the geocoding date: before 2020 means 2010.
+</li>
+<li>Store FIPS codes as text to preserve leading zeros.
+</li></ul>
+<p>Census tract codes on 2010 boundaries. Census Tract 2010 file, linked on tract_fips10.</p>
+<p>Want a refresher after today? <a href="https://nanda.isr.umich.edu/2025/03/25/understanding-geographies-in-nanda-tract10-tract20-zcta10-and-zcta20/">NaNDA's guide to geographies</a></p>
+</section>
+<section id="slide-17" aria-labelledby="slide-17-heading">
+<h2 id="slide-17-heading">Slide 17: When?</h2>
+<p>SEGMENT 2</p>
+<p>Which NaNDA years match my data collection window?</p>
+</section>
+<section id="slide-18" aria-labelledby="slide-18-heading">
+<h2 id="slide-18-heading">Slide 18: Two kinds of timing</h2>
+<p>Yearly dataset</p>
+<p>Civic, Social, and Religious Organizations</p>
+<p>one value per place per year</p>
+<p>Period dataset</p>
+<p>2008 to 2012</p>
+<p>2013 to 2017</p>
+<p>Socioeconomic Status</p>
+<p>2016 to 2020</p>
+<p>2018 to 2022</p>
+<p>YOUR DATA</p>
+<p>2016</p>
+<p>2017</p>
+<p>2018</p>
+<p>2019</p>
+<p>Jordan's interviews</p>
+<p>2008</p>
+<p>2011</p>
+<p>2014</p>
+<p>2017</p>
+<p>2020</p>
+<p>2023</p>
+</section>
+<section id="slide-19" aria-labelledby="slide-19-heading">
+<h2 id="slide-19-heading">Slide 19: Yearly dataset</h2>
+<p>WHEN, PART 1</p>
+<p>Places to gather come from Civic, Social, and Religious Organizations: one value per tract per year. </p>
+</section>
+<section id="slide-20" aria-labelledby="slide-20-heading">
+<h2 id="slide-20-heading">Slide 20: Which years does Jordan use?</h2>
+<p>POLL 2 OF 3 · YEARS, YEARLY DATASET</p>
+<p>Civic, Social, and Religious Organizations is a yearly dataset, 1990 to 2022. Jordan's interviews: 2016, 2017, 2018, 2019.</p>
+<p>A.</p>
+<p>2016 only, the enrollment year</p>
+<p>B.</p>
+<p>2016, 2017, 2018, and 2019, one per interview year</p>
+<p>C.</p>
+<p>2022 only, the most recent year</p>
+<p>D.</p>
+<p>Not sure</p>
+<p>Join the poll</p>
+<p>Watch for it to pop up in your Zoom window.</p>
+</section>
+<section id="slide-21" aria-labelledby="slide-21-heading">
+<h2 id="slide-21-heading">Slide 21: The answer is B: every interview year</h2>
+<p>Jordan's interviews</p>
+<p>2016</p>
+<p>2017</p>
+<p>2018</p>
+<p>2019</p>
+<p>↓</p>
+<p>↓</p>
+<p>↓</p>
+<p>↓</p>
+<p>2014</p>
+<p>2015</p>
+<p>2016</p>
+<p>2017</p>
+<p>2018</p>
+<p>2019</p>
+<p>2020</p>
+<p>2021</p>
+<p>Census Tract 2010 file · one value per tract per year, 1990 to 2022 (2014 to 2021 shown)</p>
+<p>A yearly dataset has a value for every tract in every year, so each interview is matched to its own year. A 2016 interview gets the 2016 value for that tract; a 2019 interview gets the 2019 value.</p>
+<p>Yearly: </p>
+<p>match the year.</p>
+<p>Every one of Jordan's years has a match. If your years fall outside the dataset's range, use the nearest year and document the decision in your methods.</p>
+</section>
+<section id="slide-22" aria-labelledby="slide-22-heading">
+<h2 id="slide-22-heading">Slide 22: One year, or every year?</h2>
+<p>Whether you need to match every interview year depends on how fast the neighborhood measure changes. That is a methods decision, and yours to make.</p>
+<p>CHANGES SLOWLY</p>
+<p>CHANGES FAST</p>
+<p>One year can be enough</p>
+<p>Match each year</p>
+<p>Places of worship and civic organizations do not move around much. Using one year for everyone, say 2016 at enrollment, may work for Jordan, and keep the analysis simpler.</p>
+<p>Some measures shift rapidly within a study window. Business openings and closings before and after the pandemic, for example. Match the interview year.</p>
+<p>2016</p>
+<p>2017</p>
+<p>2018</p>
+<p>2019</p>
+<p>2016</p>
+<p>2017</p>
+<p>2018</p>
+<p>2019</p>
+<p>Either way,</p>
+<p>write it down.</p>
+<p>State which years you used and why in your methods. Not sure how fast your measure changes? Pull two years and compare them.</p>
+</section>
+<section id="slide-23" aria-labelledby="slide-23-heading">
+<h2 id="slide-23-heading">Slide 23: Period dataset</h2>
+<p>WHEN, PART 2</p>
+<p>Neighborhood poverty comes from a period dataset: one value per 5-year window, not one per year. </p>
+</section>
+<section id="slide-24" aria-labelledby="slide-24-heading">
+<h2 id="slide-24-heading">Slide 24: Socioeconomic Status: the files</h2>
+<p>2010 tract boundaries</p>
+<p>2020 tract boundaries</p>
+<p>2008 to 2012</p>
+<p>Socioeconomic Status</p>
+<p>2013 to 2017</p>
+<p>2016 to 2020</p>
+<p>2018 to 2022</p>
+<p>YOUR DATA</p>
+<p>Jordan's interviews</p>
+<p>2016</p>
+<p>2017</p>
+<p>2018</p>
+<p>2019</p>
+<p>2008</p>
+<p>2011</p>
+<p>2014</p>
+<p>2017</p>
+<p>2020</p>
+<p>2023</p>
+<p>Boundaries first.</p>
+<p>Jordan's codes are 2010 tracts, so we'll use Census Tract 2010 files. That leaves one question: which time period?</p>
+</section>
+<section id="slide-25" aria-labelledby="slide-25-heading">
+<h2 id="slide-25-heading">Slide 25: Which 5-year window fits Jordan's research?</h2>
+<p>POLL 3 OF 3 · YEARS, PERIOD DATASET (SES)</p>
+<p>Jordan's codes are 2010 tracts. Socioeconomic Status windows: 2008 to 2012 and 2013 to 2017 (2010 boundaries); 2016 to 2020 and 2018 to 2022 (2020 boundaries). Interviews: 2016 to 2019.</p>
+<p>A.</p>
+<p>2013 to 2017</p>
+<p>B.</p>
+<p>2018 to 2022</p>
+<p>C.</p>
+<p>2008 to 2012</p>
+<p>D.</p>
+<p>2016 to 2020</p>
+<p>E.</p>
+<p>Not sure</p>
+<p>Join the poll</p>
+<p>Watch for it to pop up in your Zoom window.</p>
+</section>
+<section id="slide-26" aria-labelledby="slide-26-heading">
+<h2 id="slide-26-heading">Slide 26: The answer is A: 2013 to 2017</h2>
+<p>2010 tract boundaries</p>
+<p>2020 tract boundaries</p>
+<p>2008 to 2012</p>
+<p>Socioeconomic Status</p>
+<p>2013 to 2017</p>
+<p>2016 to 2020</p>
+<p>2018 to 2022</p>
+<p>YOUR DATA</p>
+<p>Jordan's interviews</p>
+<p>2016</p>
+<p>2017</p>
+<p>2018</p>
+<p>2019</p>
+<p>2008</p>
+<p>2013 to 2017: 2010 boundaries. Covers 2016 and 2017.</p>
+<p>2011</p>
+<p>2014</p>
+<p>2016 to 2020 and 2018 to 2022: better years, but 2020 boundaries. They won't link.</p>
+<p>2017</p>
+<p>2020</p>
+<p>2023</p>
+<p>Boundaries first.</p>
+<p>Note the gap for 2018 and 2019 in your methods.</p>
+</section>
+<section id="slide-27" aria-labelledby="slide-27-heading">
+<h2 id="slide-27-heading">Slide 27: What if Jordan's interviews ran 2011 to 2014?</h2>
+<p>2010 tract boundaries</p>
+<p>2008 to 2012</p>
+<p>Socioeconomic Status</p>
+<p>2013 to 2017</p>
+<p>YOUR DATA</p>
+<p>Jordan's interviews</p>
+<p>2011</p>
+<p>2012</p>
+<p>2013</p>
+<p>2014</p>
+<p>2008</p>
+<p>2011</p>
+<p>2014</p>
+<p>2017</p>
+<p>2020</p>
+<p>2023</p>
+<p>2008 to 2012 overlaps 2011 and 2012. Closest to enrollment, when the addresses were collected.</p>
+<p>2013 to 2017 overlaps 2013 and 2014. Closest to the later interviews.</p>
+<p>Pick one </p>
+<p>or use both.</p>
+<p>Both windows use 2010 boundaries, so either one links. Say which you chose and why in your methods.</p>
+</section>
+<section id="slide-28" aria-labelledby="slide-28-heading">
+<h2 id="slide-28-heading">Slide 28: Period dataset: neighborhood poverty</h2>
+<p>1</p>
+<p>Search the <a href="https://www.icpsr.umich.edu/sites/nanda/about">NaNDA repository</a> on ICPSR for "poverty".</p>
+<p>ICPSR STUDY PAGE</p>
+<p>2</p>
+<p>Title. Topic, geography, and years.</p>
+<p>Socioeconomic Status and Demographic Characteristics of Census Tracts, United States, 1990-2022</p>
+<p>3</p>
+<p>Open Data &amp; documentation. Filenames include geographic boundaries and years.</p>
+<p>Census Tract 2010</p>
+<p>Census Tract 2020</p>
+<p>4</p>
+<p>Check the data dictionary. Preview variable names and labels (e.g., tract_fips10, Census Tract FIPS code, 2010) * must be logged in to ICPSR to preview</p>
+<p>ZCTA 2010</p>
+<p>ZCTA 2020</p>
+<p>tract_fips10</p>
+<p>Census tract, 2010 boundaries</p>
+<p>5</p>
+<p>Save the citation. Add the dataset DOI (or full citation) to your notes or citation management software.</p>
+<p>year</p>
+<p>5-year ACS window, e.g. 2013 to 2017</p>
+<p>ppov13_17</p>
+<p>Proportion of people below the poverty line</p>
+<p>Save Dataset DOI (digital object identifier)</p>
+</section>
+<section id="slide-29" aria-labelledby="slide-29-heading">
+<h2 id="slide-29-heading">Slide 29: Where and When, so far</h2>
+<p>Where?</p>
+<p>When?</p>
+<ul>
+<li>Census tracts nest within counties. ZCTAs nest in nothing.
+</li>
+<li>ZIP ≠ ZCTA. ZIP codes need a crosswalk first.
+</li>
+<li>Boundaries follow the geocoding date: before 2020 means 2010.
+</li></ul>
+<ul>
+<li>Yearly datasets: match the interview year.
+</li>
+<li>Period datasets: pick the window that overlaps most, and say so.
+</li>
+<li>Boundaries first, then years. A year or two of gap is fine.
+</li></ul>
+<p>Jordan: Civic 2016 to 2019, every year. SES 2013 to 2017, gap noted in methods.</p>
+<p>Jordan: 2010 tracts, linked on tract_fips10</p>
+<p>Want a refresher after today? <a href="https://nanda.isr.umich.edu/2025/03/25/understanding-geographies-in-nanda-tract10-tract20-zcta10-and-zcta20/">NaNDA's guide to geographies</a></p>
+</section>
+<section id="slide-30" aria-labelledby="slide-30-heading">
+<h2 id="slide-30-heading">Slide 30: What?</h2>
+<p>SEGMENT 3</p>
+<p>Find a dataset yourself: a five-minute scavenger hunt.</p>
+</section>
+<section id="slide-31" aria-labelledby="slide-31-heading">
+<h2 id="slide-31-heading">Slide 31: Scavenger hunt</h2>
+<p>Pick one prompt. Search NaNDA on ICPSR, find a dataset that fits, and post its name in the chat.</p>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>Food access: grocery stores</p>
+<p>Getting around: public transit stops</p>
+<p>Staying connected: Internet access at home</p>
+<p>Years</p>
+<p>Geography</p>
+<p>2016</p>
+<p>Census tract, 2010 boundaries</p>
+<p>Years</p>
+<p>2016 to 2018</p>
+<p>Years</p>
+<p>2015 to 2019</p>
+<p>Geography</p>
+<p>ZCTA</p>
+<p>Geography</p>
+<p>Census tract</p>
+<p>Tip: search a single plain word, like grocery, transit, or internet.</p>
+</section>
+<section id="slide-32" aria-labelledby="slide-32-heading">
+<h2 id="slide-32-heading">Slide 32: Your turn</h2>
+<p>SEGMENT 4</p>
+<p>Find one dataset you would actually consider using for your own research question.</p>
+</section>
+<section id="slide-33" aria-labelledby="slide-33-heading">
+<h2 id="slide-33-heading">Slide 33: How the next 8 minutes run</h2>
+<p>0 to 4 min</p>
+<p>4 to 7 min</p>
+<p>7 to 8 min</p>
+<p>Work on your own</p>
+<p>Share</p>
+<p>Questions</p>
+<p>Fill in Where, When and What for your project. Browse topics on the NaNDA website, then open the dataset on ICPSR for its files and variables.</p>
+<p>In the chat or unmute: dataset, geography, years, and why it fits.</p>
+<p>Anything about finding, downloading, or linking a dataset.</p>
+<p>Stuck?</p>
+<p>Not sure what location data you have? Check your codebook or data use agreement.</p>
+<p>Have ZIP codes? Crosswalk to ZCTAs first.</p>
+<p>Can't find your topic? Try browsing the <a href="https://nanda.isr.umich.edu/data/">NaNDA data page</a>. Still stuck? Email nanda-admin@umich.edu, or <a href="https://nanda.isr.umich.edu/contact-us/">book Office Hours</a>.</p>
+</section>
+<section id="slide-34" aria-labelledby="slide-34-heading">
+<h2 id="slide-34-heading">Slide 34: Keep your handout</h2>
+<p>WRAP-UP</p>
+<p>When we reconvene, share one takeaway with the full group. The handout stays open after today, and the scavenger hunt answers are at the bottom.</p>
+</section>
+</main>
+</div>
+</body>
+</html>

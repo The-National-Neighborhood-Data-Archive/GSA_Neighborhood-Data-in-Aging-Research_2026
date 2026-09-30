@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maintaining Health while Aging with Disability: The Role of the Neighborhood Environment: slide transcript</title>
+<style>
+:root { color-scheme: light; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #ffffff;
+}
+.page { max-width: 72ch; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
+a { color: #0b5394; text-decoration: underline; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus { outline: 3px solid #0b5394; outline-offset: 3px; }
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: 0;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  color: #0b5394;
+  border: 3px solid #0b5394;
+  font-weight: 600;
+}
+.skip-link:focus { left: 1rem; top: 1rem; z-index: 1; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.75rem; }
+h2 { font-size: 1.5rem; line-height: 1.25; margin: 2.5rem 0 0.75rem; }
+main h2 { padding-top: 1rem; border-top: 1px solid #cccccc; }
+h3 { font-size: 1.2rem; line-height: 1.3; margin: 1.5rem 0 0.5rem; }
+p, ul, ol { margin: 0 0 0.75rem; }
+ul, ol { padding-left: 1.5rem; }
+li { margin-bottom: 0.25rem; }
+li > ul, li > ol { margin-top: 0.25rem; }
+.about { color: #333333; }
+.image { font-style: italic; }
+nav ol { columns: 1; }
+table { border-collapse: collapse; width: 100%; margin: 0 0 1rem; }
+th, td { border: 1px solid #767676; padding: 0.4rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: #e8eef5; color: #1a1a1a; }
+@media (min-width: 40em) { nav ol { columns: 2; column-gap: 2rem; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to slide content</a>
+<div class="page">
+<header>
+<h1>Maintaining Health while Aging with Disability: The Role of the Neighborhood Environment</h1>
+<p class="about">Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA). GSA Annual Scientific Meeting Online Workshop Series 2026. Presented by Philippa Clarke, Wednesday, October 7, 2026.</p>
+<p>This page is a text transcript of the slides, one section per slide, with image descriptions written out where the slides carry images. You can also <a href="02_Neighborhood_Environment_and_Aging_with_Disability.pptx">download this deck as a PowerPoint file</a>, <a href="02_Neighborhood_Environment_and_Aging_with_Disability.pdf">download this deck as a PDF</a>, or <a href="https://github.com/The-National-Neighborhood-Data-Archive/GSA_Neighborhood-Data-in-Aging-Research_2026">return to the workshop materials repository on GitHub</a>.</p>
+</header>
+<nav aria-label="Slides">
+<h2 id="contents">Slides in this deck</h2>
+<ol>
+<li><a href="#slide-1">Slide 1: Maintaining Health while Aging with Disability:</a></li>
+<li><a href="#slide-2">Slide 2: Aging with disability</a></li>
+<li><a href="#slide-3">Slide 3: Health disparities and disability</a></li>
+<li><a href="#slide-4">Slide 4: Health behaviors and disability</a></li>
+<li><a href="#slide-5">Slide 5: Neighborhoods and Incident Cardiometabolic Disease in People Aging with Disability</a></li>
+<li><a href="#slide-6">Slide 6: Data source: Medicare claims</a></li>
+<li><a href="#slide-7">Slide 7: Measures</a></li>
+<li><a href="#slide-8">Slide 8: NaNDA’s neighborhood measures (ZCTA)</a></li>
+<li><a href="#slide-9">Slide 9: Cox regression models</a></li>
+<li><a href="#slide-10">Slide 10: Results: Cardiometabolic incidence (3-year)</a></li>
+<li><a href="#slide-11">Slide 11: Results</a></li>
+<li><a href="#slide-12">Slide 12: Implications</a></li>
+<li><a href="#slide-13">Slide 13: Recreational facilities</a></li>
+<li><a href="#slide-14">Slide 14: Grocery stores</a></li>
+<li><a href="#slide-15">Slide 15: Traffic</a></li>
+<li><a href="#slide-16">Slide 16: Identifying neighborhood factors that could mitigate cardiometabolic risk is critical for supporting healthy aging with disability</a></li>
+</ol>
+</nav>
+<main id="main">
+<section id="slide-1" aria-labelledby="slide-1-heading">
+<h2 id="slide-1-heading">Slide 1: Maintaining Health while Aging with Disability:</h2>
+<p class="image">Image: Aerial view of a suburban neighborhood of brick houses with tiled roofs, gardens, and trees</p>
+<p class="image">Image: National Neighborhood Data Archive (NaNDA) logo</p>
+<p>GSA ANNUAL SCIENTIFIC MEETING ONLINE WORKSHOP SERIES 2026</p>
+<p>The Role of the Neighborhood Environment</p>
+<p>Philippa Clarke, PhD</p>
+<p>Research Professor</p>
+</section>
+<section id="slide-2" aria-labelledby="slide-2-heading">
+<h2 id="slide-2-heading">Slide 2: Aging with disability</h2>
+<p class="image">Diagram: Diagram of three points about aging with disability: the average age of people living with disability-associated conditions is increasing; conditions are acquired at birth, in childhood, or before midlife; and people can experience premature aging. Premature aging branches into two outcomes: medical conditions such as hypertension, obesity, heart disease, and diabetes are more prevalent in people aging with disability, and secondary health conditions such as bone loss, fractures, rotator cuff injuries, and pain.</p>
+<p>Source: Molton and Ordway, 2019</p>
+</section>
+<section id="slide-3" aria-labelledby="slide-3-heading">
+<h2 id="slide-3-heading">Slide 3: Health disparities and disability</h2>
+<p>Health conditions are more common in adults with disability:</p>
+<p>Cardiovascular disease prevalence is almost three times higher </p>
+<p>With disability</p>
+<p>10.3%</p>
+<p>Without</p>
+<p>3.7%</p>
+<p>Diabetes prevalence is twice as high</p>
+<p>With disability</p>
+<p>16%</p>
+<p>Without</p>
+<p>8%</p>
+<p>Sources: CDC Disability and Health Data System (2024); Pharr &amp; Bungum (2012)</p>
+</section>
+<section id="slide-4" aria-labelledby="slide-4-heading">
+<h2 id="slide-4-heading">Slide 4: Health behaviors and disability</h2>
+<p>Compared to those without disability, adults with disability are:</p>
+<p>2×</p>
+<p>Twice as likely to be current smokers</p>
+<p>+20%</p>
+<p>20% more likely to be sedentary</p>
+<p>+10%</p>
+<p>10% more likely to be obese</p>
+<p>Sources: CDC Disability and Health Data System (2024); Pharr &amp; Bungum (2012)</p>
+</section>
+<section id="slide-5" aria-labelledby="slide-5-heading">
+<h2 id="slide-5-heading">Slide 5: Neighborhoods and Incident Cardiometabolic Disease in People Aging with Disability</h2>
+<p class="image">Image: A shop owner in an apron carries a basket of bread out the door of a small neighborhood bakery</p>
+<p>Clarke et al., 2025. American Journal of Preventive Medicine, 69(5).</p>
+<p><a href="https://doi.org/10.1016/j.amepre.2025.108001">doi.org/10.1016/j.amepre.2025.108001</a></p>
+</section>
+<section id="slide-6" aria-labelledby="slide-6-heading">
+<h2 id="slide-6-heading">Slide 6: Data source: Medicare claims</h2>
+<p>20% random sample of de-identified administrative claims for Medicare beneficiaries (2008 to 2016)</p>
+<p>55%</p>
+<p>Received Social Security Disability Income prior to enrollment in Medicare</p>
+<p>Cerebral palsy or </p>
+<p>spina bifida</p>
+<p>27,224</p>
+<p>29%</p>
+<p>Mean age 45 years (±14)</p>
+<p>adults</p>
+<p>Spinal cord injury (plegia)</p>
+<p>48%</p>
+<p>44%</p>
+<p>8%</p>
+<p>16%</p>
+<p>Multiple sclerosis</p>
+<p>Age 18 to 44</p>
+<p>45 to 64</p>
+<p>65 and older</p>
+<p>Clarke · GSA 2026</p>
+</section>
+<section id="slide-7" aria-labelledby="slide-7-heading">
+<h2 id="slide-7-heading">Slide 7: Measures</h2>
+<p>OUTCOME</p>
+<p>EXPOSURE</p>
+<p>3-year incident cardiometabolic disease (ICD-10-CM codes)</p>
+<p>Neighborhood context</p>
+<p>Residential ZIP code linked to its ZIP Code Tabulation Area (ZCTA)</p>
+<p>Cardiovascular conditions (e.g., hypertension, heart failure, cardiac dysrhythmias)</p>
+<p>Linked to data in the National Neighborhood Data Archive (NaNDA)</p>
+<p>Type 2 diabetes mellitus</p>
+<p>Chronic kidney disease</p>
+<p class="image">Image: National Neighborhood Data Archive (NaNDA) logo</p>
+<p>Clarke · GSA 2026</p>
+</section>
+<section id="slide-8" aria-labelledby="slide-8-heading">
+<h2 id="slide-8-heading">Slide 8: NaNDA’s neighborhood measures (ZCTA)</h2>
+<p>DOMAIN</p>
+<p>MEASURES</p>
+<p>Recreation environment</p>
+<p>Recreational facilities (e.g., gyms, fitness centers, pools), </p>
+<p>Parks</p>
+<p>Consumables environment</p>
+<p>Grocery stores, fast-food restaurants, liquor stores, tobacco stores</p>
+<p>Healthcare resources</p>
+<p>Outpatient care (e.g., physicians, physical and occupational therapists)</p>
+<p>Traffic volume</p>
+<p>Average daily non-highway traffic counts per intersection</p>
+<p>Clarke · GSA 2026</p>
+</section>
+<section id="slide-9" aria-labelledby="slide-9-heading">
+<h2 id="slide-9-heading">Slide 9: Cox regression models</h2>
+<p>ANALYSES: 3-YEAR INCIDENT DISEASE</p>
+<p>01</p>
+<p>Time (days) to incident disease</p>
+<p>Adjusting for covariates</p>
+<p>02</p>
+<p>Account for clustering within ZCTAs with robust sandwich covariance matrix</p>
+<p>Age</p>
+<p>Sex</p>
+<p>Race/ethnicity</p>
+<p>Comorbid conditions (Elixhauser Comorbidity Index, ICD-9 codes)</p>
+<p>03</p>
+<p>Free of any previous cardiometabolic disease</p>
+<p>HMO coverage</p>
+<p>Neighborhood population density</p>
+<p>Neighborhood SES (Affluence, Disadvantage)</p>
+<p>Clarke · GSA 2026</p>
+</section>
+<section id="slide-10" aria-labelledby="slide-10-heading">
+<h2 id="slide-10-heading">Slide 10: Results: Cardiometabolic incidence (3-year)</h2>
+<p>49%</p>
+<p>Diagnosis of cardiometabolic disease</p>
+<p>Clarke · GSA 2026</p>
+</section>
+<section id="slide-11" aria-labelledby="slide-11-heading">
+<h2 id="slide-11-heading">Slide 11: Results</h2>
+<p class="image">Image: Forest plot of hazard ratios with 95% confidence intervals for 3-year incident cardiometabolic disease. Lower risk: recreational facilities 0.89 (0.82 to 0.97) and low traffic volume 0.85 (0.81 to 0.90). Higher risk: grocery stores 1.05 (1.02 to 1.09). Intervals that include 1: healthcare 1.07 (0.99 to 1.14), parks 0.90 (0.75 to 1.08), tobacco stores 0.84 (0.68 to 1.05), liquor stores 1.01 (0.95 to 1.08), and fast food 0.97 (0.94 to 1.02).</p>
+<p>Neighborhood resources and 3-year incident cardiometabolic disease</p>
+<p>Models adjust for age, sex, race/ethnicity, comorbidity, HMO, neighborhood SES, population density.</p>
+<p>Clarke · GSA 2026</p>
+</section>
+<section id="slide-12" aria-labelledby="slide-12-heading">
+<h2 id="slide-12-heading">Slide 12: Implications</h2>
+
+</section>
+<section id="slide-13" aria-labelledby="slide-13-heading">
+<h2 id="slide-13-heading">Slide 13: Recreational facilities</h2>
+<p class="image">Image: An empty indoor fitness center with weight machines, a punching bag, and cardio equipment by the windows</p>
+<p>Living in a neighborhood with a greater density of recreational facilities is associated with:</p>
+<p>11%</p>
+<p>reduced risk of cardiometabolic disease in adults aging with disability</p>
+<p>Critical that recreational facilities are accessible and welcoming to people as they age with disability</p>
+</section>
+<section id="slide-14" aria-labelledby="slide-14-heading">
+<h2 id="slide-14-heading">Slide 14: Grocery stores</h2>
+<p class="image">Image: A woman using a wheelchair reaches up to a high shelf in the dairy aisle of a grocery store</p>
+<p>Living in a neighborhood with a greater density of grocery stores is associated with:</p>
+<p>5%</p>
+<p>increased risk of cardiometabolic disease in adults aging with disability</p>
+<p>Healthy food in grocery stores is often more expensive;</p>
+<p>Barriers in grocery stores (narrow aisles, tall shelves) may deter shopping</p>
+</section>
+<section id="slide-15" aria-labelledby="slide-15-heading">
+<h2 id="slide-15-heading">Slide 15: Traffic</h2>
+<p class="image">Image: An older adult with white hair, seen from behind, rides a power wheelchair along a tree-lined path</p>
+<p>Living in a neighborhood with lower traffic is associated with:</p>
+<p>15%</p>
+<p>reduced risk of cardiometabolic disease in adults aging with disability</p>
+<p>People with disability often rely on public transit or pedestrian walkways, and may not have resources to own/adapt a vehicle </p>
+<p>Heavy traffic is the top environmental factor in injuries and deaths among disabled pedestrians (Schwartz, 2022)</p>
+</section>
+<section id="slide-16" aria-labelledby="slide-16-heading">
+<h2 id="slide-16-heading">Slide 16: Identifying neighborhood factors that could mitigate cardiometabolic risk is critical for supporting healthy aging with disability</h2>
+
+</section>
+</main>
+</div>
+</body>
+</html>

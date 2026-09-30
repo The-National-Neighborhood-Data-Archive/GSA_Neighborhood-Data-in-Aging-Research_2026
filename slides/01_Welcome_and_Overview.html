@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome and overview: slide transcript</title>
+<style>
+:root { color-scheme: light; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #ffffff;
+}
+.page { max-width: 72ch; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
+a { color: #0b5394; text-decoration: underline; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus { outline: 3px solid #0b5394; outline-offset: 3px; }
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: 0;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  color: #0b5394;
+  border: 3px solid #0b5394;
+  font-weight: 600;
+}
+.skip-link:focus { left: 1rem; top: 1rem; z-index: 1; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.75rem; }
+h2 { font-size: 1.5rem; line-height: 1.25; margin: 2.5rem 0 0.75rem; }
+main h2 { padding-top: 1rem; border-top: 1px solid #cccccc; }
+h3 { font-size: 1.2rem; line-height: 1.3; margin: 1.5rem 0 0.5rem; }
+p, ul, ol { margin: 0 0 0.75rem; }
+ul, ol { padding-left: 1.5rem; }
+li { margin-bottom: 0.25rem; }
+li > ul, li > ol { margin-top: 0.25rem; }
+.about { color: #333333; }
+.image { font-style: italic; }
+nav ol { columns: 1; }
+table { border-collapse: collapse; width: 100%; margin: 0 0 1rem; }
+th, td { border: 1px solid #767676; padding: 0.4rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: #e8eef5; color: #1a1a1a; }
+@media (min-width: 40em) { nav ol { columns: 2; column-gap: 2rem; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to slide content</a>
+<div class="page">
+<header>
+<h1>Welcome and overview</h1>
+<p class="about">Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA). GSA Annual Scientific Meeting Online Workshop Series 2026. Presented by Lindsay Gypin and Philippa Clarke, Wednesday, October 7, 2026.</p>
+<p>This page is a text transcript of the slides, one section per slide, with image descriptions written out where the slides carry images. You can also <a href="01_Welcome_and_Overview.pptx">download this deck as a PowerPoint file</a>, <a href="01_Welcome_and_Overview.pdf">download this deck as a PDF</a>, or <a href="https://github.com/The-National-Neighborhood-Data-Archive/GSA_Neighborhood-Data-in-Aging-Research_2026">return to the workshop materials repository on GitHub</a>.</p>
+</header>
+<nav aria-label="Slides">
+<h2 id="contents">Slides in this deck</h2>
+<ol>
+<li><a href="#slide-1">Slide 1: Using Neighborhood Data in Aging Research</a></li>
+<li><a href="#slide-2">Slide 2: Funding &amp; support</a></li>
+<li><a href="#slide-3">Slide 3: Your presenters</a></li>
+<li><a href="#slide-4">Slide 4: Today's plan</a></li>
+<li><a href="#slide-5">Slide 5: Housekeeping</a></li>
+<li><a href="#slide-6">Slide 6: Workshop materials</a></li>
+<li><a href="#slide-7">Slide 7: In the chat: what do you wish you could measure about the neighborhoods?</a></li>
+<li><a href="#slide-8">Slide 8: By 2:00 you will be able to</a></li>
+<li><a href="#slide-9">Slide 9: Two options. You pick one at 12:55.</a></li>
+<li><a href="#slide-10">Slide 10: NaNDA overview</a></li>
+<li><a href="#slide-11">Slide 11: What we'll cover</a></li>
+<li><a href="#slide-12">Slide 12: What is your neighborhood?</a></li>
+<li><a href="#slide-13">Slide 13: SOCIAL DETERMINANTS OF HEALTH</a></li>
+<li><a href="#slide-14">Slide 14: What we mean by neighborhood</a></li>
+<li><a href="#slide-15">Slide 15: Where data come from</a></li>
+<li><a href="#slide-16">Slide 16: Every research team was building the same neighborhood measures from scratch.</a></li>
+<li><a href="#slide-17">Slide 17: What is NaNDA?</a></li>
+<li><a href="#slide-18">Slide 18: FAIR data principles</a></li>
+<li><a href="#slide-19">Slide 19: Examples of neighborhood topics include:</a></li>
+<li><a href="#slide-20">Slide 20: Data updates</a></li>
+<li><a href="#slide-21">Slide 21: Hierarchy of select geographic entities</a></li>
+<li><a href="#slide-22">Slide 22: NaNDA geographies</a></li>
+<li><a href="#slide-23">Slide 23: Which geography do I use?</a></li>
+<li><a href="#slide-24">Slide 24: “Pre-linked” NaNDA</a></li>
+<li><a href="#slide-25">Slide 25: Your data plus NaNDA data, joined on one geographic identifier.</a></li>
+<li><a href="#slide-26">Slide 26: NaNDA repository walk through</a></li>
+<li><a href="#slide-27">Slide 27: Contact NaNDA</a></li>
+<li><a href="#slide-28">Slide 28: Choose your breakout</a></li>
+</ol>
+</nav>
+<main id="main">
+<section id="slide-1" aria-labelledby="slide-1-heading">
+<h2 id="slide-1-heading">Slide 1: Using Neighborhood Data in Aging Research</h2>
+<p>The National Neighborhood Data Archive (NaNDA)</p>
+<p>GSA Annual Scientific Meeting Online Workshop Series 2026</p>
+<p>Wednesday, October 7, 2026, 12:00 to 2:00 PM ET</p>
+</section>
+<section id="slide-2" aria-labelledby="slide-2-heading">
+<h2 id="slide-2-heading">Slide 2: Funding &amp; support</h2>
+<p class="image">Image: Institute for Social Research, University of Michigan logo</p>
+<ul>
+<li>National Institutes of Health
+<ul>
+<li>National Institute on Aging, R01AG109115
+</li>
+<li>National Institute of Nursing Research, U01NR020556
+</li>
+<li>National Institute on Minority Health and Health Disparities, U01NR020556
+</li></ul>
+</li></ul>
+<p class="image">Image: National Institute on Aging logo</p>
+<p class="image">Image: National Institute of Nursing Research logo</p>
+<p class="image">Image: National Institute on Minority Health and Health Disparities logo</p>
+</section>
+<section id="slide-3" aria-labelledby="slide-3-heading">
+<h2 id="slide-3-heading">Slide 3: Your presenters</h2>
+<ul>
+<li>Philippa Clarke she|her
+<ul>
+<li>Research Professor, NaNDA Co-Principal Investigator
+</li></ul>
+</li>
+<li>Grace Noppert she|her
+<ul>
+<li>Research Associate Professor, NaNDA Co-Principal Investigator
+</li></ul>
+</li>
+<li>Lindsay Gypin she|her
+<ul>
+<li>Data Librarian and Senior Project Manager
+</li></ul>
+</li></ul>
+<ul>
+<li>Robert Melendez he|him
+<ul>
+<li>Data Analyst
+</li></ul>
+</li>
+<li>Will Clary he|him
+<ul>
+<li>Research Data Analyst
+</li></ul>
+</li></ul>
+</section>
+<section id="slide-4" aria-labelledby="slide-4-heading">
+<h2 id="slide-4-heading">Slide 4: Today's plan</h2>
+<table>
+<thead><tr><th scope="col">Time (ET)</th><th scope="col">What we are doing</th><th scope="col">Who</th></tr></thead><tbody>
+<tr><td>12:00</td><td>Welcome and logistics</td><td>Philippa &amp; Lindsay</td></tr>
+<tr><td>12:05</td><td>What is NaNDA? Overview and repository tour</td><td>Lindsay &amp; Philippa</td></tr>
+<tr><td>12:30</td><td>NaNDA in action: examples from aging research</td><td>Philippa &amp; Grace</td></tr>
+<tr><td>12:55</td><td>Choose your breakout</td><td>Lindsay</td></tr>
+<tr><td>1:00</td><td>Breakouts: beginner and intermediate</td><td>All</td></tr>
+<tr><td>1:45</td><td>Reconvene and report back</td><td>Grace</td></tr>
+<tr><td>1:55</td><td>Wrap-up and resources</td><td>Lindsay</td></tr>
+</tbody></table>
+</section>
+<section id="slide-5" aria-labelledby="slide-5-heading">
+<h2 id="slide-5-heading">Slide 5: Housekeeping</h2>
+<ul>
+<li>Captions are available. Turn them on with Show Captions in your Zoom toolbar.
+</li>
+<li>Stay muted in the full group. You are welcome to unmute in your breakout.
+</li>
+<li>Chat is for comments and links. Q&amp;A is for questions you want us to answer.
+</li>
+<li>GSA Digital Programs is running the technical side. Message the host if something breaks.
+</li>
+<li>You do not need to install anything. Everything today runs in a browser.
+</li></ul>
+</section>
+<section id="slide-6" aria-labelledby="slide-6-heading">
+<h2 id="slide-6-heading">Slide 6: Workshop materials</h2>
+<p>EVERYONE</p>
+<p>Presentation slides</p>
+<p>Slides from all of today's presentations.</p>
+<p>BEGINNER</p>
+<p>Participant Handout</p>
+<p>For Choosing Your First NaNDA Dataset: your worksheet, plus the breakout's slide content. Scavenger hunt answers are at the bottom.</p>
+<p>INTERMEDIATE</p>
+<p>Practice data and code</p>
+<p>For Linking NaNDA with Your Data: practice data and sample merge code in Stata, R, and Python.</p>
+<p>Available through the workshop DOI. The link is in the chat.</p>
+</section>
+<section id="slide-7" aria-labelledby="slide-7-heading">
+<h2 id="slide-7-heading">Slide 7: In the chat: what do you wish you could measure about the neighborhoods?</h2>
+<p class="image">Image: Frankie, the NaNDA globe mascot, thinking</p>
+</section>
+<section id="slide-8" aria-labelledby="slide-8-heading">
+<h2 id="slide-8-heading">Slide 8: By 2:00 you will be able to</h2>
+<ul>
+<li>Identify which NaNDA datasets fit your research question, by geographic level, years covered, and topic
+</li>
+<li>Link NaNDA to your own data using geographic identifiers, including when to use tract_fips10 or tract_fips20, and how ZIP codes differ from ZCTAs
+</li>
+<li>Frame a research question that combines neighborhood measures with your individual-level aging outcomes
+</li></ul>
+</section>
+<section id="slide-9" aria-labelledby="slide-9-heading">
+<h2 id="slide-9-heading">Slide 9: Two options. You pick one at 12:55.</h2>
+<ul>
+<li>Beginner: Choosing Your First NaNDA Dataset
+<ul>
+<li>Census tracts, ZCTAs, and which matches your data
+</li>
+<li>Matching NaNDA years to your collection period
+</li>
+<li>Reading a codebook and finding the identifier
+</li>
+<li>Hands-on time in the repository
+</li></ul>
+</li></ul>
+<ul>
+<li>Intermediate: Linking NaNDA with Your Data
+<ul>
+<li>Identifiers and the pitfalls that break a merge
+</li>
+<li>When you need a crosswalk, and which one
+</li>
+<li>A live merge you can follow along with
+</li>
+<li>Drafting a research question that uses both
+</li></ul>
+</li></ul>
+</section>
+<section id="slide-10" aria-labelledby="slide-10-heading">
+<h2 id="slide-10-heading">Slide 10: NaNDA overview</h2>
+<p class="image">Image: NaNDA, National Neighborhood Data Archive, logo</p>
+<p>An overview of the National Neighborhood Data Archive, and a tour of the repository</p>
+<p>GSA Annual Scientific Meeting Online Workshop Series 2026, October 7, 2026</p>
+</section>
+<section id="slide-11" aria-labelledby="slide-11-heading">
+<h2 id="slide-11-heading">Slide 11: What we'll cover</h2>
+<p>01</p>
+<p>Why neighborhood context matters for aging research</p>
+<p>02</p>
+<p>What NaNDA is, and what is in it</p>
+<p>03</p>
+<p>Which NaNDA datasets are already linked to the studies you use</p>
+<p>04</p>
+<p>Geography: the part that trips people up</p>
+<p>05</p>
+<p>A live tour of the repository</p>
+</section>
+<section id="slide-12" aria-labelledby="slide-12-heading">
+<h2 id="slide-12-heading">Slide 12: What is your neighborhood?</h2>
+<p class="image">Image: Black-and-white portrait of Fred Rogers of Mister Rogers' Neighborhood, smiling and leaning on the model Neighborhood Trolley</p>
+<p>A few blocks.</p>
+<p>A school catchment.</p>
+<p>A census tract, because that is what the data came in.</p>
+<p>Your choice changes your findings</p>
+</section>
+<section id="slide-13" aria-labelledby="slide-13-heading">
+<h2 id="slide-13-heading">Slide 13: SOCIAL DETERMINANTS OF HEALTH</h2>
+<p class="image">Image: Healthy People 2030 graphic showing the five domains of the social determinants of health: economic stability, education access and quality, health care access and quality, neighborhood and built environment, and social and community context</p>
+<p>Neighborhood and built environment is one of the five domains.</p>
+<p>It is also the one most researchers have the least data on.</p>
+<p>Healthy People 2030, U.S. Department of Health and Human Services.</p>
+</section>
+<section id="slide-14" aria-labelledby="slide-14-heading">
+<h2 id="slide-14-heading">Slide 14: What we mean by neighborhood</h2>
+<p>Built and physical</p>
+<p>Social and economic</p>
+<p>•</p>
+<p>Walkability, public transit, traffic</p>
+<p>•</p>
+<p>Disadvantage, affluence, gentrification</p>
+<p>•</p>
+<p>Food stores, parks and recreation</p>
+<p>•</p>
+<p>Mortgage lending, housing affordability</p>
+<p>•</p>
+<p>Healthcare, hospitals</p>
+<p>•</p>
+<p>School quality, employment, crime</p>
+<p>•</p>
+<p>Air pollution, climate, air conditioning</p>
+<p>•</p>
+<p>Voter registration, turnout, and partisanship</p>
+<p>•</p>
+<p>Broadband </p>
+</section>
+<section id="slide-15" aria-labelledby="slide-15-heading">
+<h2 id="slide-15-heading">Slide 15: Where data come from</h2>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>Ask people</p>
+<p>Go look</p>
+<p>Use data that already exist</p>
+<p>Survey items on safety, cohesion, park quality. Captures perception, but it is your own data collection.</p>
+<p>Systematic social observation, in person or by street view. Rich, and expensive.</p>
+<p>Census and ACS, business point data, parcel data, weather stations, administrative records. This is what NaNDA is built from.</p>
+</section>
+<section id="slide-16" aria-labelledby="slide-16-heading">
+<h2 id="slide-16-heading">Slide 16: Every research team was building the same neighborhood measures from scratch.</h2>
+<p>2019</p>
+<p>In 2019, NaNDA was founded</p>
+</section>
+<section id="slide-17" aria-labelledby="slide-17-heading">
+<h2 id="slide-17-heading">Slide 17: What is NaNDA?</h2>
+<p class="image">Image: NaNDA, National Neighborhood Data Archive, logo</p>
+<p>The National Neighborhood Data Archive (NaNDA) is an open data repository. It provides FAIR datasets about physical and social environment that researchers can easily combine with their own data.</p>
+</section>
+<section id="slide-18" aria-labelledby="slide-18-heading">
+<h2 id="slide-18-heading">Slide 18: FAIR data principles</h2>
+<p>F</p>
+<p>A</p>
+<p>I</p>
+<p>R</p>
+<p>FINDABLE</p>
+<p>ACCESSIBLE</p>
+<p>INTEROPERABLE</p>
+<p>REUSABLE</p>
+<p><a href="https://www.go-fair.org/fair-principles/">go-fair.org/fair-principles</a></p>
+</section>
+<section id="slide-19" aria-labelledby="slide-19-heading">
+<h2 id="slide-19-heading">Slide 19: Examples of neighborhood topics include:</h2>
+<p>Health care services</p>
+<p>Parks</p>
+<p>Social Services</p>
+<p>Transportation</p>
+<p>(health care providers, residential care facilities, hospitals)</p>
+<p>(public parks, national and state parks)</p>
+<p>(crisis centers, shelters, child day care services)</p>
+<p>(street connectivity, public transit stops, traffic)</p>
+<p>Broadband</p>
+<p>Liquor, tobacco and dispensaries</p>
+<p>Crimes</p>
+<p>Grocery stores</p>
+<p>(internet availability, speed, adoption, and access)</p>
+<p>(counts and density measures)</p>
+<p>(crime reported by the FBI)</p>
+<p>(counts and density measures)</p>
+</section>
+<section id="slide-20" aria-labelledby="slide-20-heading">
+<h2 id="slide-20-heading">Slide 20: Data updates</h2>
+<p>Business Openings &amp; Closings</p>
+<p>Quality of Public Transit</p>
+<p>Updated Voter Registration, Turnout, Partisanship (2024, Census Tract)</p>
+<p>National Housing Preservation Database</p>
+<p>LGBTQ+ Health &amp; Policy</p>
+<p>Policing</p>
+</section>
+<section id="slide-21" aria-labelledby="slide-21-heading">
+<h2 id="slide-21-heading">Slide 21: Hierarchy of select geographic entities</h2>
+<p class="image">Image: Census Bureau diagram of the hierarchy of geographic entities. The main spine runs from nation to regions, divisions, states, counties, census tracts, and block groups. Other entities branch off it: ZIP Code Tabulation Areas (ZCTAs); American Indian, Alaska Native, and Hawaiian Home Lands; urban areas; metropolitan and micropolitan areas; places; school districts; congressional districts; Public Use Microdata Areas; Alaska Native regional areas; state legislative districts; and county subdivisions.</p>
+<p>census.gov</p>
+</section>
+<section id="slide-22" aria-labelledby="slide-22-heading">
+<h2 id="slide-22-heading">Slide 22: NaNDA geographies</h2>
+<p class="image">Image: The same Census Bureau hierarchy diagram with the four geographies NaNDA publishes circled in pink: ZIP Code Tabulation Areas, school districts, counties, and census tracts.</p>
+<p class="image">Image: NaNDA, National Neighborhood Data Archive, logo</p>
+<p>census.gov</p>
+</section>
+<section id="slide-23" aria-labelledby="slide-23-heading">
+<h2 id="slide-23-heading">Slide 23: Which geography do I use?</h2>
+<p>IF YOUR DATA HAVE…</p>
+<p>JOIN TO NANDA USING…</p>
+<p>A census tract, FIPS code, or GEOID (11 digits)</p>
+<p>→</p>
+<p>The FIPS code directly. Check whether it uses 2010 or 2020 geographic boundaries: tract_fips10 and tract_fips20 are not interchangeable</p>
+<p>A ZIP code</p>
+<p>→</p>
+<p>A ZIP-code-to-ZCTA crosswalk. Some ZIP codes have no ZCTA</p>
+<p>Full street addresses (not PO boxes)</p>
+<p>→</p>
+<p>Geocode first, in ArcGIS or an online geocoder, then join on the resulting FIPS code</p>
+</section>
+<section id="slide-24" aria-labelledby="slide-24-heading">
+<h2 id="slide-24-heading">Slide 24: “Pre-linked” NaNDA</h2>
+<p>DATA SOURCE</p>
+<p>POPULATION</p>
+<p>GEOGRAPHY</p>
+<p>PROTOCOL FOR ACCESS</p>
+<p>Health and Retirement Study</p>
+<p>US adults age 51+</p>
+<p>Census tract</p>
+<p>Accessed through virtual enclave with restricted data application</p>
+<p>National Health and Aging Trends Study</p>
+<p>US adults age 65+ </p>
+<p>Census tract</p>
+<p>Accessed through virtual enclave with restricted data application</p>
+<p>Panel Study of Income Dynamics</p>
+<p>1968 US sample</p>
+<p>Block group</p>
+<p>Accessed through virtual enclave with restricted data application</p>
+<p>Michigan Medicine Electronic Health Records</p>
+<p>Michigan Medicine patients</p>
+<p>Residential address</p>
+<p>IRB approval and U-M affiliation, accessed through DataDirect</p>
+<p>Federal Statistical Research Data Centers</p>
+<p>Varies by dataset (Census, NCHS, AHRQ surveys)</p>
+<p>Census block</p>
+<p>Approved project proposal and background check, accessed in a secure research data center</p>
+</section>
+<section id="slide-25" aria-labelledby="slide-25-heading">
+<h2 id="slide-25-heading">Slide 25: Your data plus NaNDA data, joined on one geographic identifier.</h2>
+<p class="image">Image: plus</p>
+<p class="image">Image: equals</p>
+<p>Your Data</p>
+<p>NaNDA Data</p>
+<p>New Ideas</p>
+</section>
+<section id="slide-26" aria-labelledby="slide-26-heading">
+<h2 id="slide-26-heading">Slide 26: NaNDA repository walk through</h2>
+<p><a href="https://www.loom.com/share/5d852818a8ad422ca0f3e610914dc68d?sid=d7320bc0-09da-474e-a472-ec00445f0e0f">Navigating the National</a><br><a href="https://www.loom.com/share/5d852818a8ad422ca0f3e610914dc68d?sid=d7320bc0-09da-474e-a472-ec00445f0e0f">Neighborhood Data Archive 🗺️</a><br><a href="https://www.loom.com/share/5d852818a8ad422ca0f3e610914dc68d?sid=d7320bc0-09da-474e-a472-ec00445f0e0f">Watch Video</a></p>
+</section>
+<section id="slide-27" aria-labelledby="slide-27-heading">
+<h2 id="slide-27-heading">Slide 27: Contact NaNDA</h2>
+<p class="image">Image: Contact NaNDA, National Neighborhood Data Archive</p>
+<p class="image">Image: Website:</p>
+<p>nanda.isr.umich.edu</p>
+<p class="image">Image: Email:</p>
+<p>nanda-admin@umich.edu</p>
+<p class="image">Image: Instagram:</p>
+<p>@UM_NaNDA</p>
+<p class="image">Image: Threads:</p>
+<p>@UM_NaNDA</p>
+<p class="image">Image: LinkedIn:</p>
+<p>linkedin.com/company/um-nanda</p>
+</section>
+<section id="slide-28" aria-labelledby="slide-28-heading">
+<h2 id="slide-28-heading">Slide 28: Choose your breakout</h2>
+<p>Back together at 1:45</p>
+<p>BEGINNER</p>
+<p>Choosing Your First NaNDA Dataset</p>
+<p>Pick this if</p>
+<p>You are new to neighborhood data, or want help finding the right dataset.</p>
+<p>You'll leave with</p>
+<p>A NaNDA dataset matched to your geography and years.</p>
+<p>INTERMEDIATE</p>
+<p>Linking NaNDA with Your Data</p>
+<p>Pick this if</p>
+<p>Your data have addresses, ZIP codes, or census tracts to merge with NaNDA.</p>
+<p>You'll leave with</p>
+<p>A merge you ran on practice data, plus code you can reuse.</p>
+<p>How to join</p>
+<p>1</p>
+<p>Click Breakout Rooms in your Zoom toolbar. It may be under More.</p>
+<p>2</p>
+<p>Choose Beginner or Intermediate, then click Join.</p>
+<p>Not sure? Start with Beginner. You can switch rooms any time.</p>
+</section>
+</main>
+</div>
+</body>
+</html>
