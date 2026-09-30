@@ -22,6 +22,13 @@ decorative or without alt text are skipped. Alt text that is only a filename is
 treated as missing and reported, as is any chart or diagram without alt text and
 any slide without a title.
 
+A picture whose alt text ends with a colon (for example "Instagram:") is a
+label for the text beside it, not an image in its own right. It is paired with
+the nearest text shape to its right in the same vertical band, and the two are
+written as one paragraph, "Instagram: @UM_NaNDA", with any hyperlink on the
+text kept and no "Image:" prefix. A label with no text beside it is written as
+an image description.
+
 Usage:
     python tools/pptx_to_html.py                 # every deck in DECKS
     python tools/pptx_to_html.py 04_Choosing_Your_First_NaNDA_Dataset
@@ -55,26 +62,33 @@ WORKSHOP_TITLE = (
 EVENT_LINE = "GSA Annual Scientific Meeting Online Workshop Series 2026"
 DATE_LINE = "Wednesday, October 7, 2026"
 
-# One entry per deck: public filename stem, deck title, presenters.
-# Titles for decks 2 to 4 are the talk titles on each deck's slide 1. Decks 1
-# and 5 open with the workshop title, so they carry the deck's name instead.
+# One entry per deck: public filename stem, session name, presenters, and the
+# page heading (None means the heading is the session name). The session name
+# is the <title> of the page and matches the Title property of the original
+# deck, so the transcript, the PDF, and the README all call a session by the
+# same name. The talk titles for sessions 2 to 4 are the presenters' own.
 DECKS = [
     ("01_Welcome_and_Overview",
-     "Welcome and overview",
-     "Lindsay Gypin and Philippa Clarke"),
+     "Welcome and overview: what NaNDA is and a tour of the repository",
+     "Lindsay Gypin and Philippa Clarke",
+     None),
     ("02_Neighborhood_Environment_and_Aging_with_Disability",
      "Maintaining Health while Aging with Disability: "
      "The Role of the Neighborhood Environment",
-     "Philippa Clarke"),
+     "Philippa Clarke",
+     None),
     ("03_NaNDA_and_Immune_Aging",
      "Where We Live Gets Under the Skin: NaNDA and Immune Aging",
-     "Grace Noppert"),
+     "Grace Noppert",
+     None),
     ("04_Choosing_Your_First_NaNDA_Dataset",
      "Choosing Your First NaNDA Dataset",
-     "Lindsay Gypin"),
+     "Lindsay Gypin",
+     "Breakout 1 (beginner): Choosing Your First NaNDA Dataset"),
     ("05_Reconvene_and_Wrap-Up",
-     "Reconvene and wrap-up",
-     "Grace Noppert and Lindsay Gypin"),
+     "Reconvene and wrap-up: report back, resources, and next steps",
+     "Grace Noppert and Lindsay Gypin",
+     None),
 ]
 
 SKIP_PLACEHOLDERS = {
@@ -406,7 +420,12 @@ def ordered_shapes(shapes, exclude=None):
     return ordered
 
 
-def render_text_shape(shape, slide, report: Report, slide_height: int) -> list[str]:
+def render_text_shape(shape, slide, report: Report, slide_height: int,
+                      label: str | None = None) -> list[str]:
+    """Render a text shape. A label (the alt text of an icon that sits beside
+    the shape, such as "Instagram:") is written in front of the first
+    paragraph, outside any hyperlink, so the line reads "Instagram: @UM_NaNDA".
+    """
     if not shape.has_text_frame:
         return []
     paragraphs = list(shape.text_frame.paragraphs)
@@ -440,6 +459,9 @@ def render_text_shape(shape, slide, report: Report, slide_height: int) -> list[s
             inner = f'<a href="{attr(wrap_link)}">{inner}</a>'
             report.links.add(wrap_link)
             wrap_link = None
+        if label:
+            inner = f"{esc(label)} {inner}"
+            label = None
         kind = bullet_kind(para, shape, slide)
         if kind is None:
             close_all()
@@ -509,7 +531,66 @@ def render_described(shape, kind: str, slide_no: int, report: Report) -> list[st
     return [f'<p class="image">{text}</p>']
 
 
-def render_shape(shape, slide, slide_no: int, report: Report, slide_height: int) -> list[str]:
+def is_label_picture(shape) -> bool:
+    """A non-decorative picture whose alt text ends with a colon."""
+    return (
+        shape._element.tag == qn("p:pic")
+        and not is_decorative(shape)
+        and alt_text(shape).endswith(":")
+    )
+
+
+def has_visible_text(shape) -> bool:
+    return (
+        shape._element.tag == qn("p:sp")
+        and shape.has_text_frame
+        and bool(plain_text(shape.text_frame.paragraphs))
+    )
+
+
+def render_shapes(shapes, slide, slide_no: int, report: Report, slide_height: int,
+                  exclude=None) -> list[str]:
+    """Render a collection of shapes in reading order.
+
+    Before rendering, every label picture (see is_label_picture) is paired with
+    the nearest text shape to its right whose top edge is within ROW_TOLERANCE
+    of the picture's. The picture is then dropped and its alt text is written
+    in front of that shape's first paragraph. A label with no partner is
+    rendered as an ordinary image description.
+    """
+    ordered = ordered_shapes(shapes, exclude=exclude)
+    labels: dict[int, str] = {}      # id(text shape element) -> label
+    consumed: set[int] = set()       # id(label picture element)
+    for pic in ordered:
+        if not is_label_picture(pic):
+            continue
+        partner = None
+        for candidate in ordered:
+            if candidate._element is pic._element or not has_visible_text(candidate):
+                continue
+            if id(candidate._element) in labels:
+                continue
+            if (candidate.left or 0) < (pic.left or 0):
+                continue
+            if abs((candidate.top or 0) - (pic.top or 0)) > ROW_TOLERANCE:
+                continue
+            if partner is None or (candidate.left or 0) < (partner.left or 0):
+                partner = candidate
+        if partner is not None:
+            labels[id(partner._element)] = alt_text(pic)
+            consumed.add(id(pic._element))
+
+    out: list[str] = []
+    for shape in ordered:
+        if id(shape._element) in consumed:
+            continue
+        out.extend(render_shape(shape, slide, slide_no, report, slide_height,
+                                label=labels.get(id(shape._element))))
+    return out
+
+
+def render_shape(shape, slide, slide_no: int, report: Report, slide_height: int,
+                 label: str | None = None) -> list[str]:
     element = shape._element
     tag = element.tag
 
@@ -521,10 +602,7 @@ def render_shape(shape, slide, slide_no: int, report: Report, slide_height: int)
             pass
 
     if tag == qn("p:grpSp"):
-        out: list[str] = []
-        for child in ordered_shapes(shape.shapes):
-            out.extend(render_shape(child, slide, slide_no, report, slide_height))
-        return out
+        return render_shapes(shape.shapes, slide, slide_no, report, slide_height)
 
     if tag == qn("p:pic"):
         nv_pr = element.find(qn("p:nvPicPr"))
@@ -551,7 +629,7 @@ def render_shape(shape, slide, slide_no: int, report: Report, slide_height: int)
     if tag == qn("p:cxnSp"):
         return []
 
-    return render_text_shape(shape, slide, report, slide_height)
+    return render_text_shape(shape, slide, report, slide_height, label=label)
 
 
 # --------------------------------------------------------------------------- #
@@ -565,8 +643,10 @@ def slide_title(slide) -> str:
     return plain_text(title_shape.text_frame.paragraphs)
 
 
-def build_page(stem: str, deck_title: str, presenters: str, prs, report: Report) -> str:
+def build_page(stem: str, deck_title: str, presenters: str, heading: str | None,
+               prs, report: Report) -> str:
     slide_height = prs.slide_height or 1
+    page_heading = heading or deck_title
     sections: list[str] = []
     nav_items: list[str] = []
 
@@ -579,9 +659,8 @@ def build_page(stem: str, deck_title: str, presenters: str, prs, report: Report)
             report.missing_title.append(n)
         nav_items.append(f'<li><a href="#slide-{n}">{heading}</a></li>')
 
-        body: list[str] = []
-        for shape in ordered_shapes(slide.shapes, exclude=slide.shapes.title):
-            body.extend(render_shape(shape, slide, n, report, slide_height))
+        body = render_shapes(slide.shapes, slide, n, report, slide_height,
+                             exclude=slide.shapes.title)
 
         sections.append(
             f'<section id="slide-{n}" aria-labelledby="slide-{n}-heading">\n'
@@ -591,7 +670,7 @@ def build_page(stem: str, deck_title: str, presenters: str, prs, report: Report)
         )
 
     report.slide_count = len(prs.slides)
-    page_title = f"{deck_title}: slide transcript"
+    page_title = f"{deck_title} (slide transcript)"
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -607,7 +686,7 @@ def build_page(stem: str, deck_title: str, presenters: str, prs, report: Report)
 <a class="skip-link" href="#main">Skip to slide content</a>
 <div class="page">
 <header>
-<h1>{esc(deck_title)}</h1>
+<h1>{esc(page_heading)}</h1>
 <p class="about">{esc(WORKSHOP_TITLE)}. {esc(EVENT_LINE)}. Presented by {esc(presenters)}, {esc(DATE_LINE)}.</p>
 <p>This page is a text transcript of the slides, one section per slide, with image descriptions written out where the slides carry images. You can also <a href="{attr(stem)}.pptx">download this deck as a PowerPoint file</a>, <a href="{attr(stem)}.pdf">download this deck as a PDF</a>, or <a href="{attr(REPO_URL)}">return to the workshop materials repository on GitHub</a>.</p>
 </header>
@@ -626,14 +705,14 @@ def build_page(stem: str, deck_title: str, presenters: str, prs, report: Report)
 """
 
 
-def convert(stem: str, deck_title: str, presenters: str) -> Report:
+def convert(stem: str, deck_title: str, presenters: str, heading: str | None) -> Report:
     source = SLIDES_DIR / f"{stem}.pptx"
     target = SLIDES_DIR / f"{stem}.html"
     if not source.exists():
         raise SystemExit(f"Missing public deck: {source}. Run tools\\make_public_decks.ps1 first.")
     report = Report(stem=stem)
     prs = Presentation(str(source))
-    page = build_page(stem, deck_title, presenters, prs, report)
+    page = build_page(stem, deck_title, presenters, heading, prs, report)
     target.write_text(page, encoding="utf-8", newline="\n")
     return report
 
@@ -646,8 +725,8 @@ def main(argv: list[str]) -> int:
         print("Unknown deck stem(s):", ", ".join(sorted(unknown)))
         return 2
 
-    for stem, deck_title, presenters in decks:
-        report = convert(stem, deck_title, presenters)
+    for stem, deck_title, presenters, heading in decks:
+        report = convert(stem, deck_title, presenters, heading)
         print(f"{stem}.html: {report.slide_count} slides, {len(report.links)} distinct links")
         for slide_no, kind, name in report.missing_alt:
             print(f"   missing alt text: slide {slide_no}, {kind.lower()} {name!r}")
