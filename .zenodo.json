@@ -1,46 +1,69 @@
 {
+  "title": "Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA). Workshop Materials, GSA Annual Scientific Meeting Online Workshop Series 2026",
   "upload_type": "lesson",
-  "title": "Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA). Workshop materials, GSA Annual Scientific Meeting Online Workshop Series 2026",
+  "description": "<p>Materials from the two-hour virtual workshop <em>Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA)</em>, presented October 7, 2026 as part of the GSA Annual Scientific Meeting Online Workshop Series 2026.</p><p>The National Neighborhood Data Archive (NaNDA) is a federally funded open data repository at the University of Michigan Institute for Social Research that publishes neighborhood-level measures of the social, economic, and built environment through ICPSR. The workshop introduces NaNDA, walks through examples of its use in gerontological research, and offers two parallel breakout tracks: a beginner track on choosing a first NaNDA dataset (geographies, time periods, and dataset selection) and an intermediate track on linking NaNDA measures to participant data.</p><p>This record contains the presentation slides for the full-group sessions and the beginner breakout (web page, PowerPoint, and PDF for each), the beginner participant handout, and supporting tools. Speaker notes are not included. The intermediate breakout materials (practice data and sample merge code) are published separately at <a href=\"https://the-national-neighborhood-data-archive.github.io/GSA_Intermediate_2026/\">https://the-national-neighborhood-data-archive.github.io/GSA_Intermediate_2026/</a>.</p><p>Presenters: Philippa Clarke, Lindsay Gypin, William Clary, Robert Melendez, and Grace Noppert, University of Michigan.</p>",
   "creators": [
     {
       "name": "Clarke, Philippa",
-      "affiliation": "University of Michigan, Institute for Social Research",
+      "affiliation": "Institute for Social Research, University of Michigan",
       "orcid": "0000-0002-4925-2968"
     },
     {
-      "name": "Noppert, Grace",
-      "affiliation": "University of Michigan, Institute for Social Research",
-      "orcid": "0000-0002-2040-960X"
-    },
-    {
       "name": "Gypin, Lindsay",
-      "affiliation": "University of Michigan, Institute for Social Research",
+      "affiliation": "Institute for Social Research, University of Michigan",
       "orcid": "0000-0001-7533-7669"
     },
     {
-      "name": "Melendez, Robert",
-      "affiliation": "University of Michigan, Institute for Social Research"
+      "name": "Clary, William Milton",
+      "affiliation": "Institute for Social Research, University of Michigan",
+      "orcid": "0009-0001-3583-5337"
     },
     {
-      "name": "Clary, William",
-      "affiliation": "University of Michigan, Institute for Social Research",
-      "orcid": "0009-0001-3583-5337"
+      "name": "Melendez, Robert",
+      "affiliation": "Institute for Social Research, University of Michigan"
+    },
+    {
+      "name": "Noppert, Grace",
+      "affiliation": "Institute for Social Research, University of Michigan",
+      "orcid": "0000-0002-2040-960X"
     }
   ],
-  "description": "<p>Materials from <em>Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA)</em>, a two-hour virtual workshop presented on October 7, 2026 as part of the GSA Annual Scientific Meeting Online Workshop Series 2026. The workshop introduced NaNDA and its repository on ICPSR, showed two examples of neighborhood data in aging research, and ran two hands-on breakouts: a beginner session on choosing a first NaNDA dataset and an intermediate session on linking NaNDA with your own data.</p><p>This package holds the five slide decks in three formats (PowerPoint, accessible HTML transcript, and PDF), the beginner breakout's participant handout, a section that points to the intermediate breakout's separately published materials, the resources participants were pointed to, and the scripts used to produce the public copies.</p>",
   "access_right": "open",
   "license": "cc-by-4.0",
+  "language": "eng",
   "keywords": [
+    "National Neighborhood Data Archive",
     "NaNDA",
     "neighborhood data",
     "aging research",
     "gerontology",
+    "contextual data",
+    "social determinants of health",
     "census tracts",
-    "ZCTA",
+    "ZIP Code Tabulation Areas",
+    "data linkage",
     "open data",
     "ICPSR",
-    "workshop"
+    "workshop",
+    "GSA 2026"
   ],
-  "version": "1.0.0",
-  "language": "eng"
+  "related_identifiers": [
+    {
+      "identifier": "https://the-national-neighborhood-data-archive.github.io/GSA_Intermediate_2026/",
+      "relation": "isSupplementedBy",
+      "resource_type": "lesson",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.icpsr.umich.edu/web/ICPSR/series/1920",
+      "relation": "references",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://nanda.isr.umich.edu/",
+      "relation": "references",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Speaker notes have been removed from all decks. The intermediate breakout materials carry their own DOI; see the related identifiers."
 }

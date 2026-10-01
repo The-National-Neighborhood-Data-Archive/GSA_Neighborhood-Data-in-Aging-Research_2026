@@ -1,6 +1,6 @@
 # Tools
 
-These scripts made the public copies of the slide decks, the PDFs, and the HTML transcripts in the slides folder. They are kept here so the same package can be rebuilt for the next workshop, or rebuilt now if a deck changes. They are released under the MIT License in the repository root.
+These scripts made the public copies of the slide decks, the PDFs, and the HTML transcripts in the slides folder. They are kept here so the same package can be rebuilt for the next workshop, or rebuilt now if a deck changes. Like everything else in this repository, they are released under the Creative Commons Attribution 4.0 International license in the repository root.
 
 ## What each script does
 

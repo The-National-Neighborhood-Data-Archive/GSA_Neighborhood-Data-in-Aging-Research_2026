@@ -1,46 +1,47 @@
-# Citation metadata for the workshop materials. GitHub reads this file for its
-# "Cite this repository" button, and Zenodo reads it when a release is archived.
-# The DOI is pending: the identifiers block is added once Zenodo mints it from
-# release v1.0.0.
+# Citation metadata for GitHub's "Cite this repository" button.
+# Zenodo reads .zenodo.json first, so that file controls the Zenodo record;
+# this one controls what GitHub shows. Keep the two in step.
+# After the first release, paste the Zenodo concept DOI into the `doi` field
+# and bump `version` and `date-released` with each new release.
+
 cff-version: 1.2.0
 message: "If you use these materials, please cite them as below."
-type: dataset
-title: "Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA). Workshop materials, GSA Annual Scientific Meeting Online Workshop Series 2026"
+title: "Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA). Workshop Materials, GSA Annual Scientific Meeting Online Workshop Series 2026"
 authors:
   - family-names: Clarke
     given-names: Philippa
     orcid: "https://orcid.org/0000-0002-4925-2968"
-    affiliation: "University of Michigan, Institute for Social Research"
-  - family-names: Noppert
-    given-names: Grace
-    orcid: "https://orcid.org/0000-0002-2040-960X"
-    affiliation: "University of Michigan, Institute for Social Research"
+    affiliation: "Institute for Social Research, University of Michigan"
   - family-names: Gypin
     given-names: Lindsay
     orcid: "https://orcid.org/0000-0001-7533-7669"
-    affiliation: "University of Michigan, Institute for Social Research"
+    affiliation: "Institute for Social Research, University of Michigan"
+  - family-names: Clary
+    given-names: William Milton
+    orcid: "https://orcid.org/0009-0001-3583-5337"
+    affiliation: "Institute for Social Research, University of Michigan"
   - family-names: Melendez
     given-names: Robert
-    affiliation: "University of Michigan, Institute for Social Research"
-  - family-names: Clary
-    given-names: William
-    orcid: "https://orcid.org/0009-0001-3583-5337"
-    affiliation: "University of Michigan, Institute for Social Research"
-version: 1.0.0
-date-released: 2026-09-30
-license:
-  - CC-BY-4.0
-  - MIT
-repository-code: "https://github.com/The-National-Neighborhood-Data-Archive/GSA_Neighborhood-Data-in-Aging-Research_2026"
-url: "https://github.com/The-National-Neighborhood-Data-Archive/GSA_Neighborhood-Data-in-Aging-Research_2026"
+    affiliation: "Institute for Social Research, University of Michigan"
+  - family-names: Noppert
+    given-names: Grace
+    orcid: "https://orcid.org/0000-0002-2040-960X"
+    affiliation: "Institute for Social Research, University of Michigan"
+abstract: "Slides, participant handout, and supporting tools from the two-hour virtual workshop Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA), presented October 7, 2026 in the GSA Annual Scientific Meeting Online Workshop Series 2026. Intermediate breakout materials are published separately."
 keywords:
+  - National Neighborhood Data Archive
   - NaNDA
   - neighborhood data
   - aging research
   - gerontology
+  - contextual data
   - census tracts
-  - ZCTA
+  - ZIP Code Tabulation Areas
+  - data linkage
   - open data
-  - ICPSR
-  - workshop
-abstract: "Slides, accessible HTML transcripts, PDFs, handouts, and supporting tools from the two-hour virtual workshop Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA), presented on October 7, 2026 as part of the GSA Annual Scientific Meeting Online Workshop Series 2026. The workshop introduced NaNDA, showed two examples of neighborhood data in aging research, and ran two hands-on breakouts: choosing a first NaNDA dataset, and linking NaNDA with your own data."
+license: CC-BY-4.0
+repository-code: "https://github.com/The-National-Neighborhood-Data-Archive/GSA_Neighborhood-Data-in-Aging-Research_2026"
+url: "https://nanda.isr.umich.edu/"
+version: 1.0.0
+date-released: 2026-10-01
+# doi: 10.5281/zenodo.XXXXXXX   <- concept DOI, uncomment and fill after the first release

@@ -68,15 +68,15 @@ Every NaNDA dataset has its own DOI. Include it in your citation. Cite each data
 
 Each session's slides have an HTML transcript: one web page per deck, with a section for every slide, the slide title as a heading, the slide text and lists in reading order, tables as real tables, links preserved, and the description of each image written out as text. The transcripts were generated from the public copies of the decks with the script in the [tools](tools/README.md) folder, so they match the PowerPoint and PDF copies slide for slide. They contain no images, scripts, or external resources, and they were built to the WCAG 2.1 AA guidelines. The PDFs are tagged for document structure. If anything in this repository does not work with your assistive technology, email [nanda-admin@umich.edu](mailto:nanda-admin@umich.edu).
 
-## How to cite these materials
+## Cite these materials
 
-Clarke, P., Noppert, G., Gypin, L., Melendez, R., and Clary, W. (2026). *Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA). Workshop materials, GSA Annual Scientific Meeting Online Workshop Series 2026* (Version 1.0.0). DOI pending.
+Clarke, P., Gypin, L., Clary, W. M., Melendez, R., & Noppert, G. (2026). *Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA). Workshop materials, GSA Annual Scientific Meeting Online Workshop Series 2026* (Version 1.0.0) [Lesson]. Zenodo. DOI pending; it will be added once the first release is archived in Zenodo.
 
-The same information is in [CITATION.cff](CITATION.cff), which GitHub reads for the "Cite this repository" button. The DOI will be added once the first release is archived in Zenodo.
+GitHub's "Cite this repository" button (right sidebar) offers APA and BibTeX versions generated from `CITATION.cff`.
 
 ## License
 
-The scripts in the tools folder are released under the [MIT License](LICENSE). The slides, transcripts, PDFs, handouts, and other documents are released under the [Creative Commons Attribution 4.0 International license](LICENSE-CC-BY-4.0.md), which lets you share and adapt them with credit to the authors.
+Workshop materials in this repository are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You are free to share and adapt them with attribution.
 
 ## Funding
 
