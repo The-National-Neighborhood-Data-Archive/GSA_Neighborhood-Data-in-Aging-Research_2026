@@ -2,6 +2,8 @@
 
 # Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA)
 
+[![DOI](https://zenodo.org/badge/1398707734.svg)](https://doi.org/10.5281/zenodo.23083791)
+
 This repository holds the materials from a two-hour workshop in the [GSA Annual Scientific Meeting Online Workshop Series 2026](https://www.gsa2026.org/Program/Online-Workshops), presented on **Wednesday, October 7, 2026, 12:00 to 2:00 PM ET**, virtually on Zoom. The workshop introduced NaNDA and its [repository on ICPSR](https://www.icpsr.umich.edu/sites/nanda/home), showed two examples of neighborhood data in aging research, and ran two hands-on breakouts. The materials are for the people who took part and for anyone in aging research who wants to find, choose, and link neighborhood data.
 
 ## Presenters
@@ -70,7 +72,7 @@ Each session's slides have an HTML transcript: one web page per deck, with a sec
 
 ## Cite these materials
 
-Clarke, P., Gypin, L., Clary, W. M., Melendez, R., & Noppert, G. (2026). *Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA). Workshop materials, GSA Annual Scientific Meeting Online Workshop Series 2026* (Version 1.0.0) [Lesson]. Zenodo. DOI pending; it will be added once the first release is archived in Zenodo.
+Clarke, P., Gypin, L., Clary, W. M., Melendez, R., & Noppert, G. (2026). *Using Neighborhood Data in Aging Research: The National Neighborhood Data Archive (NaNDA). Workshop materials, GSA Annual Scientific Meeting Online Workshop Series 2026* (Version 1.0.0) [Lesson]. Zenodo. https://doi.org/10.5281/zenodo.23083791
 
 GitHub's "Cite this repository" button (right sidebar) offers APA and BibTeX versions generated from `CITATION.cff`.
 

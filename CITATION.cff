@@ -44,4 +44,4 @@ repository-code: "https://github.com/The-National-Neighborhood-Data-Archive/GSA_
 url: "https://nanda.isr.umich.edu/"
 version: 1.0.0
 date-released: 2026-10-01
-# doi: 10.5281/zenodo.XXXXXXX   <- concept DOI, uncomment and fill after the first release
+doi: 10.5281/zenodo.23083791
